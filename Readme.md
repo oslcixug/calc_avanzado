@@ -1,10 +1,12 @@
 # Contidos de curso de Calc Avanzado
 
+## Formato
+
+Os contidos foron editados coa versión 2.4.2 da ferramenta <a href="https://exelearning.net/">eXeLearning</a> nun sistema operativo Ubuntu 18.04.
+
 ## Autores
 
-Estes contidos foron traducidos ao Galego por Rafael Rodríguez, partindo do traballo orixinal de Ismael Fanlo e Salvador Doménech.
-
-Tamén se actualizaron as capturas de pantalla ata a versión 6.2 de LibreOffice Calc. Mantéñense os vídeos orixinais da versión orixinal.
+Estes contidos foron traducidos ao Galego por Rafael Rodríguez, a partires do <a href="https://oficinalibre.net/">traballo orixinal</a> de Ismael Fanlo e Salvador Doménech.
 
 ## Licenza
 
