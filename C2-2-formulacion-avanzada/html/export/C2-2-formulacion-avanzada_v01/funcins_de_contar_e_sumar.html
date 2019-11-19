@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="gl">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Funcións de contar e sumar | Formulación avanzada en Calc </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Rafael Rodríguez Gayoso (gl) - Ismael Fanlo y Salvador Doménech" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-47"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegación</a></p>
+<header id="header" ><div id="headerContent">Formulación avanzada en Calc</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Formulación avanzada</a></li>
+   <li><a href="uso_do_asistente_de_funcins.html" class="no-ch">Uso do Asistente de funcións</a></li>
+   <li><a href="uso_de_nomes_en_frmulas_e_funcins.html" class="no-ch">Uso de nomes en fórmulas e funcións</a></li>
+   <li><a href="uso_de_expresins_lxicas.html" class="no-ch">Uso de expresións lóxicas</a></li>
+   <li><a href="aniado_de_funcins.html" class="no-ch">Aniñado de funcións</a></li>
+   <li><a href="uso_de_comodns_ou_expresins_regulares.html" class="no-ch">Uso de comodíns ou expresións regulares</a></li>
+   <li id="active"><a href="funcins_de_contar_e_sumar.html" class="active no-ch">Funcións de contar e sumar</a></li>
+   <li><a href="funcins_de_texto.html" class="no-ch">Funcións de texto</a></li>
+   <li><a href="funcins_de_data_e_hora.html" class="no-ch">Funcións de data e hora</a></li>
+   <li><a href="funcins_lxicas.html" class="no-ch">Funcións lóxicas</a></li>
+   <li><a href="funcins_de_folla_de_clculo.html" class="no-ch">Funcións de folla de cálculo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="uso_de_comodns_ou_expresins_regulares.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funcins_de_texto.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Funcións de contar e sumar</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id112">
+<div class="iDevice emphasis0">
+<div id="ta112_1" class="block iDevice_content">
+<p>Xa coñecemos as funcións <strong>SUMA</strong> e <strong>CONTA</strong>. Pero hai bastantes máis funcións que nos permitirán contar celas dunha táboa que cumpran certas condicións, contar celas baleiras, sumar valores dunha táboa correspondentes a determinado criterio, etc.</p>
+<h2>Función CONTA()</h2>
+<p><strong>CONTA</strong> permite contar as celas con contido numérico nun intervalo dado. Ignora as celas sen contido.</p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTA(Intervalo_a_contar)</strong></span></p>
+<p>No exemplo, contanse cantos valores aparecen baixo a columna <strong>Importe</strong> no intervalo de celas <span style="font-family: courier new,courier;"><strong>C2:C7</strong></span>. O resultado queremos amosalo na cela <strong><span style="font-family: courier new,courier;">B9</span></strong>, polo que lle inserimos a seguinte fórmula:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTA(C2:C7)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-40.png" alt="Ejemplo de CONTAR" title="Ejemplo de CONTAR" style="display: block; margin-left: auto; margin-right: auto;" width="576" height="302" />Pero a función <strong>CONTA</strong> non serve para celas con contido de texto, pois só conta valores numéricos. Neste exemplo contamos cantos valores aparecen baixo a columna Nome, no intervalo de celas <strong><span style="font-family: courier new,courier;">A2:A7</span></strong>.</p>
+<p>O resultado queremos amosalo na cela <strong><span style="font-family: courier new,courier;">B9</span></strong>, polo que lle inserimos a fórmula:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTA(A2:A7)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-41.png" alt="CONTAR no sirve para celdas con texto" title="CONTAR no sirve para celdas con texto" style="display: block; margin-left: auto; margin-right: auto;" width="575" height="301" /></p>
+<p>Dado que nese intervalo de celas non hai ningún valor numérico (son nomes de persoas) o resultado será cero.</p>
+<h2>Función  CONTARA()</h2>
+<p><strong>CONTARA</strong> conta as celas con contido (texto ou número) nun intervalo dado. Ignora as celas sen contido.</p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARA(Intervalo_a_contar)</strong></span></p>
+<p>No exemplo, contaremos cantas celas conteñen texto ou números baixo a columna <strong>Nome</strong>, no intervalo de celas <span style="font-family: courier new,courier;"><strong>A2:A7</strong></span>.</p>
+<p>O resultado queremos amosalo na cela <strong><span style="font-family: courier new,courier;">B9</span></strong>, polo que lle inserimos a seguinte fórmula:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARA(A2:A7)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-42.png" alt="Con CONTARA se pueden contar celdas con cualquier contenido" title="Con CONTARA se pueden contar celdas con cualquier contenido" style="display: block; margin-left: auto; margin-right: auto;" width="576" height="299" /></p>
+<p>Dado que nese intervalo de celas, todas elas, aínda que non conteñen valor numérico, se conteñen textos, o resultado será 6.</p>
+<p>No seguinte exemplo estamos calculando cantas celas teñen contido baixo a columna <strong>Estado</strong>, no intervalo de celas <span style="font-family: courier new,courier;"><strong>D2:D7</strong></span>.</p>
+<p>O resultado queremos amosalo na cela <strong><span style="font-family: courier new,courier;">B9</span></strong>, polo que lle inserimos a seguinte fórmula:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARA(D2:D7)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-43.png" alt="Otro ejemplo de CONTARA" title="Otro ejemplo de CONTARA" style="display: block; margin-left: auto; margin-right: auto;" width="578" height="303" /></p>
+<p>O resultado é 4, xa que las celas baleiras non se contan, e existen catro celas que conteñen texto.</p>
+<h2>Función CONTARSE()</h2>
+<p><strong>CONTARSE</strong> conta as celas que cumpren un determinado criterio nun intervalo dado.</p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARSE(Intervalo_a_contar;Criterio)</strong></span></p>
+<p>onde:</p>
+<ul>
+<li><strong>Intervalo_a_contar</strong> é a referencia a intervalo onde se conta</li>
+<li><strong>Criterio</strong> unha expresión de texto, numérica ou con comodíns. É insensible a maiúsculas ou minúsculas.</li>
+</ul>
+<p>No exemplo contaremos no intervalo de celas <strong><span style="font-family: courier new,courier;">D2:D7</span> </strong>situadas baixo a cabeceira <strong>Estado</strong> cantas conteñen o texto <strong>Pendente,</strong> que introducimos na cela <strong><span style="font-family: courier new,courier;">B9</span></strong>.</p>
+<p>O resultado queremos amosalo en <span style="font-family: courier new,courier;"><strong>B10</strong></span>, polo que nesa cela inserimos a seguinte fórmula:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARSE(D2:D7;B9)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-44.png" alt="CONTAR.SI con criterios de texto" title="CONTAR.SI con criterios de texto" style="display: block; margin-left: auto; margin-right: auto;" width="581" height="329" /></p>
+<h3>Función CONTARSE() utilizando expresións regulares</h3>
+<p>Un erro común prodúcese cando os usuarios ao escribir unha palabra nunha celda, finalizan a edición cun espazo. Eses espazos extras poden provocar que un criterio aparentemente correcto non funcione como se espera, xa que <strong>Calc</strong> considera como dúas cousas completamente distintas os textos "Pendente" sen espazo ao final e "Pendente " cun espazo ao final.</p>
+<p>Podemos optimizar o resultado usando <strong><a href="uso_de_comodns_ou_expresins_regulares.html">expresións regulares na fórmula</a></strong>.  </p>
+<p>No seguinte exemplo contaremos no intervalo de celas <strong><span style="font-family: courier new,courier;">D2:D7</span> </strong>situadas baixo a cabeceira <strong>Estado</strong> cantas comezan polo texto <strong>Pend,</strong> para o que na cela <strong><span style="font-family: courier new,courier;">B9</span></strong> escribiremos a expresión regular <strong>Pend.*</strong> (que básicamente podemos traducir por celas que comecen por pend).</p>
+<p>O resultado queremos amosalo en <span style="font-family: courier new,courier;"><strong>B10</strong></span>, polo que nesa cela inserimos a seguinte fórmula:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARSE(D2:D7;B9)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-45.png" alt="CONTAR.SI usando expresiones regulares" title="CONTAR.SI usando expresiones regulares" style="display: block; margin-left: auto; margin-right: auto;" width="578" height="330" /></p>
+<p>Neste outro exemplo, cantas celas baixo <strong>Nome</strong>, no intervalo de celas <span style="font-family: courier new,courier;"><strong>A2:A7 </strong></span>comezan por <strong>Pe</strong> e conteñen dous caracteres máis. A expresión regular imos escribila en <span style="font-family: 'courier new', courier;"><strong>B9</strong></span>, onde tecleamos <strong>«Pe..»</strong> (ollo cos dous puntos que hai despois das letras).</p>
+<p>O resultado será amosado en <span style="font-family: 'courier new', courier;"><strong>B10</strong></span>, polo que nesa cela incorporamos a seguinte fórmula:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARSE(A2:A7;B9)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-46.png" alt="Otro ejemplo de CONTAR.SI con expresiones regulares" title="Otro ejemplo de CONTAR.SI con expresiones regulares" style="display: block; margin-left: auto; margin-right: auto;" width="576" height="328" /></p>
+<p>O resultado é 2, pois atopa Pepe e Pepa, pero non inclúe a Pep, que só conta cunha letra máis despois de <strong>Pe</strong>.</p>
+<h3>Función CONTARSE() utilizando criterios de comparación: =, &gt;, &lt;, &gt;=, &lt;=, &lt;&gt;</h3>
+<p>Tamén podemos utilizar<strong> CONTARSE</strong> con expresións numéricas e operadores de comparación (profundizaremos neles co estudo das funcións lóxicas).</p>
+<p>No exemplo contanse cantos importes cumpren o criterio indicado na cela <strong><span style="font-family: courier new,courier;">B9</span></strong>, neste caso, cantos son superiores a 300.</p>
+<p>O resultado amosase na cela <span style="font-family: 'courier new', courier;"><strong>B10</strong></span>, polo que nesa cela incorporamos a seguinte fórmula:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARSE(C2:C7;B9)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-47.png" alt="CONTAR.SI con criterios numéricos" title="CONTAR.SI con criterios numéricos" style="display: block; margin-left: auto; margin-right: auto;" width="580" height="328" /></p>
+<p>Podemos repasar máis exemplos de criterios de comparación en <a href="uso_de_expresins_lxicas.html"><strong>funcións con expresións lóxicas</strong></a>.</p>
+<h2>Función CONTARSES</h2>
+<p>A función <strong>CONTARSE</strong> ten a limitación de que só admite un criterio.</p>
+<p>Podemos superar esa limitación utilizando a función <strong>CONTARSES,</strong> sempre e cando todos os criterios sexan do tipo <strong>E</strong>. Esta función non se pode aplicar se os criterios son de tipo <strong>OU</strong> ou mestura de ambos.</p>
+<ul>
+<li>Enténdese como criterios de tipo <strong>E</strong> aqueles que para cumprirse, deben cumprirse todos: A cidade é Valencia E as ventas maiores de 300.</li>
+<li>Enténdese como criterios de tipo <strong>OU</strong> aqueles que para cumprirse, deben cumprirse polo menos un deles: A cidade é Valencia OU as ventas maiores de 300.</li>
+</ul>
+<p><strong>CONTARSES</strong> conta nun intervalo de celas cantos cumpren un ou máis criterios. Deben cumprirse todos os criterios (criterios de tipo E).</p>
+<p style="text-align: left;"><span>Sintaxe básica:</span></p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARSES(Intervalo1;Criterio1;[Intervalo2];[Criterio2];...)</strong></span></p>
+<p style="text-align: left;"><span>onde </span></p>
+<ul>
+<li style="text-align: left;"><span><strong>Intervalo1</strong>, <strong>Intervalo2</strong>, etc son os intervalos onde comprobar os respectivos criterios.</span></li>
+<li style="text-align: left;"><span><strong>Criterio1</strong>, <strong>Criterio2</strong>, etc son as expresións de texto, numéricas ou con comodíns con coincidencias no <strong>Intervalo1</strong>, <strong>Intervalo2</strong>, etc, respectivamente, contaranse.</span></li>
+<li style="text-align: left;"><span>Só é obrigatorio o primeiro par de Intervalo/Criterio, siendo opcionaos os seguintes.<br /></span></li>
+</ul>
+<p><span>No exemplo contanse <span>filas correspondentes á cidade de Valencia e cun importe &gt;300. Deben cumprirse ambas condicións.</span></span></p>
+<p><span><span>A cidade, e o criterio de importe escribímolos en <span><span><span style="font-family: 'courier new', courier;"><strong>B9</strong></span></span></span> e <span><span><span style="font-family: 'courier new', courier;"><strong>B10</strong></span></span></span>, respectivamente.<br /></span></span></p>
+<p><span><span>O resultado amósase en <span style="font-family: 'courier new', courier;"><strong>B11</strong></span>, polo que nesa cela incorporamos a seguinte fórmula:</span></span></p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARSES(C2:C7;B9;B2:B7;B10)</strong></span></p>
+<p><span><span><img src="C2-2-formulacion-avanzada-48.png" alt="Ejemplo de CONTAR.SI.CONJUNTO" title="Ejemplo de CONTAR.SI.CONJUNTO" style="display: block; margin-left: auto; margin-right: auto;" width="591" height="349" /></span></span></p>
+<h2>Función SUMARSE</h2>
+<p>Quen non ten longas listas de datos cunha columna para notas ou observacións? Moitas veces precisamos sumar importes que teñan unha condición concreta. Con esta función podemos sumar valores que cumpran determinados criterios.</p>
+<p>A función SUMARSE é similar a CONTARSe, pero incorpora un argumento máis: as celas que desexamos sumar.</p>
+<p><strong>SUMARSE</strong> suma valores dun intervalo que cumpran un criterio específico.</p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><strong>=SUMARSE(Intervalo;Criterios;[Intervalo de suma])</strong></p>
+<p>onde:</p>
+<ul>
+<li><strong>Intervalo</strong> é o intervalo onde se comprobará o criterio.</li>
+<li><strong>Criterios</strong> é unha expresión de texto, numérica ou con comodíns, e a súa coincidencia vaise comprobar no <strong>Intervalo</strong>.</li>
+<li><strong>Intervalo de suma</strong> é o intervalo que contén os valores que se sumarán; é opcional e pódese omitir, se coincide co <strong>Intervalo</strong>.</li>
+</ul>
+<p>No exemplo seguinte, súmanse os importes superiores a 300. Como o criterio compróbase no propio intervalo de importes, non se precisa, por ser coincidente, o terceiro argumento da función.</p>
+<p><span><span>O criterio de importe escribímolo en <span><span><span style="font-family: 'courier new', courier;"><strong>B9</strong></span></span></span>. O resultado amósase en <span style="font-family: 'courier new', courier;"><strong>B10</strong></span>, polo que nesa cela incorporamos a seguinte fórmula:</span></span></p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=SUMARSE(C2:C7;B9)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-49.png" alt="SUMAR.SI con criterio numérico" title="SUMAR.SI con criterio numérico" style="display: block; margin-left: auto; margin-right: auto;" width="578" height="331" /></p>
+<p> </p>
+<p>No seguinte ejemplo súmanse os valores baixo a columna <strong>Importe</strong> que na columna <strong>Estado</strong> conteñan calquera expresión que comece por <strong>Pend</strong></p>
+<p><span><span>O criterio de estado escribímolo en <span><span><span style="font-family: 'courier new', courier;"><strong>B9</strong></span></span></span>. O resultado amósase en <span style="font-family: 'courier new', courier;"><strong>B10</strong></span>, polo que nesa cela incorporamos a seguinte fórmula:</span></span></p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=SUMARSE(D2:D7;B9;C2:C7)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-50.png" alt="SUMAR.SI con criterio texto y uso de expresiones regulares" title="SUMAR.SI con criterio texto y uso de expresiones regulares" style="display: block; margin-left: auto; margin-right: auto;" width="574" height="326" /></p>
+<h2>Función SUMARSES</h2>
+<p>As funcións <strong>SUMARSE</strong> e <strong>CONTARSE</strong> teñen a limitación de que só admiten un criterio.</p>
+<p>Podemos superar esa limitación utilizando la función <strong>SUMARSES</strong>, sempre e cando todos os criterios sexan de tipo <strong>E</strong>. Esta función non se pode aplicar se os criterios son de tipo <strong>OU</strong> ou mestura de ambos.</p>
+<p><strong>SUMARSES</strong> suma os valores dun intervalo, os cales nun ou máis intervalos cumpren un ou máis criterios. Deben cumprirse todos os criterios (criterios de tipo E).</p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=SUMARSE(Intervalo de suma;Intervalo1;Criterio1;[Intervalo2];[Criterio2];...)</strong></span></p>
+<p>onde </p>
+<ul>
+<li><strong>Intervalo de suma</strong> é o intervalo cos valores que se desexan sumar.</li>
+<li><strong>Intervalo1, Intervalo2</strong><strong></strong>, etc son os intervalos onde comprobar os respectivos criterios.</li>
+<li><strong>Criterio1</strong>, <strong>Criterio2</strong>, etc son as expresións de texto, numéricas ou con comodíns que teñan coincidencias en <strong>Intervalo1</strong>, <strong>Intervalo2</strong>, etc, respectivamente,serán contados.</li>
+<li>Só é obrigatorio o primeiro par de Intervalo/Criterio, sendo opcionais os seguintes.</li>
+</ul>
+<p>No exemplo súmanse os valores de Importe correspondentes á cidade de Valencia E que o seu estado é Cancelado. Deben cumprirse ambas condicións.</p>
+<p><span><span><span><span>O criterio de estado e de cidade imos escribilos en <span><span><span style="font-family: 'courier new', courier;"><strong>B9</strong></span></span></span> e <span><span><span style="font-family: 'courier new', courier;"><strong>B10</strong></span></span></span>, respectivamente.</span></span></span></span></p>
+<p><span><span>O resultado amósase en <span style="font-family: 'courier new', courier;"><strong>B11</strong></span>, polo que nesa cela incorporamos a seguinte fórmula:</span></span></p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=SUMARSES(C2:C7;D2:D7;B9;B2:B7;B10)</strong></span></p>
+<p><img src="C2-2-formulacion-avanzada-51.png" alt="Ejemplo de SUMAR.SI.CONJUNTO" title="Ejemplo de SUMAR.SI.CONJUNTO" style="display: block; margin-left: auto; margin-right: auto;" width="624" height="356" /></p>
+<h2>Función CONTARENBRANCO</h2>
+<p>Se necesitamos saber o número de celas baleiras nun intervalo, imos conseguilo con esta función.</p>
+<p><strong>CONTARENBRANCO</strong> conta as celas baleiras nun intervalo.</p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=CONTARENBRANCO(Intervalo)</strong></span></p>
+<p>No exemplo amósase cantas filas teñen sen asignar a Cidade.</p>
+<p><img src="C2-2-formulacion-avanzada-52.png" alt="CONTAR.BLANCO para contar celdas vacías" title="CONTAR.BLANCO para contar celdas vacías" style="display: block; margin-left: auto; margin-right: auto;" width="613" height="300" /></p>
+<p> </p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id100">
+<div class="iDevice emphasis0">
+<div id="ta100_1" class="block iDevice_content">
+<figure class="exe-figure exe-media position-center" style="width: 800px;"><iframe width="800" height="450" src="//www.youtube.com/embed/1yG7KjJAdAo" allowfullscreen="allowfullscreen"></iframe>
+<figcaption class="figcaption"><span class="title"><em>Video: Funciones para contar y sumar (1/3)</em></span></figcaption>
+</figure>
+<p> </p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id101">
+<div class="iDevice emphasis0">
+<div id="ta101_1" class="block iDevice_content">
+<figure class="exe-figure exe-media position-center" style="width: 800px;"><iframe width="800" height="450" src="//www.youtube.com/embed/t9vmDi-PKrU" allowfullscreen="allowfullscreen"></iframe>
+<figcaption class="figcaption"><span class="title"><em>Vídeo: Funciones para contar y sumar (2/3)</em></span></figcaption>
+</figure>
+<p> </p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id102">
+<div class="iDevice emphasis0">
+<div id="ta102_1" class="block iDevice_content">
+<figure class="exe-figure exe-media position-center" style="width: 800px;"><iframe width="800" height="450" src="//www.youtube.com/embed/KhQodm90rjA" allowfullscreen="allowfullscreen"></iframe>
+<figcaption class="figcaption"><span class="title"><em>Vídeo: Funciones para contar y sumar (3/3)</em></span></figcaption>
+</figure>
+<p> </p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Licenciado baixo a</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licenza Creative Commons Recoñecemento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="uso_de_comodns_ou_expresins_regulares.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funcins_de_texto.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

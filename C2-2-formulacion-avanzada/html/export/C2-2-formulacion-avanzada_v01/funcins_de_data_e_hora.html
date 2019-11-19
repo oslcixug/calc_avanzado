@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="gl">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Funcións de data e hora | Formulación avanzada en Calc </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Rafael Rodríguez Gayoso (gl) - Ismael Fanlo y Salvador Doménech" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-48"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegación</a></p>
+<header id="header" ><div id="headerContent">Formulación avanzada en Calc</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Formulación avanzada</a></li>
+   <li><a href="uso_do_asistente_de_funcins.html" class="no-ch">Uso do Asistente de funcións</a></li>
+   <li><a href="uso_de_nomes_en_frmulas_e_funcins.html" class="no-ch">Uso de nomes en fórmulas e funcións</a></li>
+   <li><a href="uso_de_expresins_lxicas.html" class="no-ch">Uso de expresións lóxicas</a></li>
+   <li><a href="aniado_de_funcins.html" class="no-ch">Aniñado de funcións</a></li>
+   <li><a href="uso_de_comodns_ou_expresins_regulares.html" class="no-ch">Uso de comodíns ou expresións regulares</a></li>
+   <li><a href="funcins_de_contar_e_sumar.html" class="no-ch">Funcións de contar e sumar</a></li>
+   <li><a href="funcins_de_texto.html" class="no-ch">Funcións de texto</a></li>
+   <li id="active"><a href="funcins_de_data_e_hora.html" class="active no-ch">Funcións de data e hora</a></li>
+   <li><a href="funcins_lxicas.html" class="no-ch">Funcións lóxicas</a></li>
+   <li><a href="funcins_de_folla_de_clculo.html" class="no-ch">Funcións de folla de cálculo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="funcins_de_texto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funcins_lxicas.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Funcións de data e hora</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id114">
+<div class="iDevice emphasis0">
+<div id="ta114_1" class="block iDevice_content">
+<p><strong>Calc</strong> dispón de diferentes funcións para manipular e facer cálculos con datas e horas.</p>
+<p>Pero antes de velas, é aconsellable deixar claros algúns conceptos sobre datas e horas que nos permitirán entender algúns resultados que nos poderían confundir.</p>
+<p>En primeiro lugar, <strong>unha data é un número formatado dun xeito especial</strong>. Para comprobalo, basta con escribir unha data nunha cela e cambiar o seu formato a número.</p>
+<p><img src="C2-2-formulacion-avanzada-80.png" alt="Una fecha es un número" title="Una fecha es un número" style="display: block; margin-left: auto; margin-right: auto;" width="326" height="61" /></p>
+<p>E, que significa este número?  Nin máis nin menos que o número de días transcorridos dende o 30/12/1899 ata a data actual.</p>
+<p>Podemos comprobalo de xeito doado escribendo o número 0 nunha cela e activar o formato numérico de data (con catro díxitos para o ano). Ésta correspondese coa data base que se utiliza en Calc (salvo configuración en contra).</p>
+<p><img src="C2-2-formulacion-avanzada-81.1.png" alt="Fecha del día 1" title="Fecha del día 1" style="display: block; margin-left: auto; margin-right: auto;" width="307" height="163" /></p>
+<p>Esta equivalencia entre datas e números é a que permite facer cálculos coas datas, obtendo cantos días hai entre dúas datas, ou que data resultará de incrementar o día actual cun determinado número de días.</p>
+<p>Normalmente, <strong>Calc</strong> presupón o tipo de resultado que desexas obter e amosarao no formato axeitado. Pero en ocasións podemos atoparnos con que esperando obter unha data, realmente obtemos un número, uo viceversa. Cando nos ocurre isto, a primera reacción é pensar que nos equivocmos na fórmula, pero antes de tomar outras medidas, <span style="text-decoration: underline;">cambiemos o formato numérico ao tipo de dato que esperamos obter</span>. A maioría das veces arranxa o problema.</p>
+<p>Se necesitamos calcular o número de días transcurridos entres dúas datas, unha simple resta será suficiente.</p>
+<p><img src="C2-2-formulacion-avanzada-82.png" alt="Calculando diferencia entre fechas" title="Calculando diferencia entre fechas" style="display: block; margin-left: auto; margin-right: auto;" width="446" height="57" /></p>
+<p>De xeito similar, se desexamos obter a data resultante de incrementar unha data nun número de días, simplemente faremos unha suma.</p>
+<p><img src="C2-2-formulacion-avanzada-83.png" alt="Incrementando días a una fecha" title="Incrementando días a una fecha" style="display: block; margin-left: auto; margin-right: auto;" width="452" height="86" /></p>
+<p>Polo mesmo motivo, se un día equivale á unidade, a hora é unha fracción da unidade.  24:00 horas equivalen a 1 día; 12:00 horas equivalen a 0,5 partes do día. 6:00 horas son 0,25 partes do día.</p>
+<p>Recordemos que para introducir horas nunha cela con formato de hora hai que escribilas como HH:MM ou HH:MM:SS</p>
+<p><img src="C2-2-formulacion-avanzada-83.1.png" alt="La hora es una fracción de la unidad" title="La hora es una fracción de la unidad" style="display: block; margin-left: auto; margin-right: auto;" width="320" height="167" /></p>
+<p>Ese é o motivo polo cal, se desexamos multiplicar horas (en formato de hora) por un precio/hora, haberá ademáis que <strong>multiplicar por 24</strong>.</p>
+<p><img src="C2-2-formulacion-avanzada-84.png" alt="Calculando horas por un precio hora" title="Calculando horas por un precio hora" style="display: block; margin-left: auto; margin-right: auto;" width="710" height="143" /></p>
+<p>Coñezamos agora algunhas funcións especialmente útiles ao tratar con datas e horas.</p>
+<p>As funcións que seguen son as que por regra xeral son consideradas máis útiles polos usuarios. Recomendamos unha exploración das diferentes funcións desta categoría, onde se poden atopar moitas outras que poden ter aplicación directa nas túas tarefas.</p>
+<h2>Función HOXE()</h2>
+<p><strong>HOXE</strong> devolve a data actual.  </p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span><strong>=HOXE()</strong></span></p>
+<p>Esta función non ten argumentos.</p>
+<p><strong><img src="C2-2-formulacion-avanzada-85.png" alt="Función HOY" title="Función HOY" style="display: block; margin-left: auto; margin-right: auto;" width="361" height="96" /></strong></p>
+<h2>Función AGORA()</h2>
+<p><strong>AGORA </strong>devolve a data e hora actual.  </p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span><strong>=AGORA()</strong></span></p>
+<p>Esta función non ten argumentos.</p>
+<p><strong><img src="C2-2-formulacion-avanzada-86.png" alt="Función HOY" title="Función HOY" style="display: block; margin-left: auto; margin-right: auto;" width="402" height="88" /></strong></p>
+<p> </p>
+<p class="destacado"><img src="icon_idea.gif" alt="Idea" title="Idea" width="37" height="30" /> <strong>Idea</strong><br />Ambas funcións son dinámicas e actualizan o resultado amosado (especialmente relevante para <strong>AGORA</strong>) cada vez que se recalcula a folla de cálculo. A folla de cálculo recalculase (salvo que optaramos polo recálculo manual) cada que vez que modificamos os datos dalgunha folla. Se temos unha función <strong>AGORA</strong> e queremos que se recalcule sen necesidade de modificar ningún dato, deberemos premer a tecla <span class="keyboard">F9</span>.</p>
+<div class="destacado">
+<p><img src="icon_idea.gif" alt="Idea" title="Idea" width="37" height="30" /> <strong>Idea</strong><br />Necesitas inserir a data ou a hora de hoxe pero non desexas que se actualice? Proba os siguientes atallos de teclado:</p>
+<ul>
+<li><span class="keyboard">Ctrl</span> + <span class="keyboard">,</span> (símbolo coma) inserirá a data do día de forma fixa.</li>
+<li><span class="keyboard">Ctrl</span> + <span class="keyboard">Maiús</span> + <span class="keyboard">,</span> (símbolo coma) inserirá a data e hora deste intre, de forma fixa.</li>
+</ul>
+</div>
+<h2>Función DÍA()</h2>
+<p><strong>DÍA</strong> devolve o número de día correspondiente a unha data.  </p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=DÍA(Número_de_data)</strong></span></p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-87.png" alt="Función DÍA" title="Función DÍA" width="330" height="89" /></p>
+<h2>Función MES()</h2>
+<p><strong>MES</strong> devolve o número de mes correspondente a unha data.  </p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span><strong>=MES(Número_de_data)</strong></span></p>
+<p><strong><img src="C2-2-formulacion-avanzada-88.png" alt="Función MES" title="Función MES" style="display: block; margin-left: auto; margin-right: auto;" width="343" height="88" /></strong></p>
+<h2>Función ANO()</h2>
+<p><strong>ANO</strong> devolve o número de ano correspondente a unha data.</p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span><strong>=ANO(Número_de_data)</strong></span></p>
+<p style="text-align: center;"><span><strong><img src="C2-2-formulacion-avanzada-89.png" alt="Función AÑO" title="Función AÑO" width="347" height="90" /></strong></span></p>
+<h2>Función DATA()<strong><br /></strong></h2>
+<p><strong>DATA</strong> permite construir unha data a partir dun número de ano, un número de mes e un número de día.</p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=DATA(Ano;Mes;Día)</strong></span></p>
+<p>onde </p>
+<ul>
+<li><strong>Ano</strong> é un número de ano</li>
+<li><strong>Mes</strong> é un número de mes</li>
+<li><strong>Día</strong> é un número de día</li>
+<li>A orde dos argumentos debe manterse de xeito estrito.</li>
+</ul>
+<p><img src="C2-2-formulacion-avanzada-90.png" alt="Función FECHA" title="Función FECHA" style="display: block; margin-left: auto; margin-right: auto;" width="382" height="194" /></p>
+<p>Á función <strong>DATA</strong> poden pasarselle argumentos para día e mes excedidos dos límites correntes, como un día número 32, ou un mes número 13.  <strong>Calc</strong> sabe calcular eses casos e entende que o día 32 (nun mes de 31 días) corresponde ao día 1 do mes seguinte, e que o mes 13 corresponde a xaneiro do ano seguinte, coma no seguinte exemplo.</p>
+<p><img src="C2-2-formulacion-avanzada-91.png" alt="Función FECHA con valores de argumentos excedidos" title="Función FECHA con valores de argumentos excedidos" style="display: block; margin-left: auto; margin-right: auto;" width="371" height="194" /></p>
+<p>Podemos usar a función <strong>DATA</strong> para inserir unha data dentro dunha fórmula, pero dentro das fórmulas tamén podemos escribir unha data como un texto en notación <strong><span style="font-family: 'courier new', courier;">"AAAA-MM-DD"</span></strong>.  As dúas fórmulas seguintes son perfectamente equivalentes:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=HOXE()-DATA(1958;12;3)</strong></span></p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=HOXE()-"1958-12-3"</strong></span></p>
+<p class="destacado"><img src="icon_advertencia.gif" alt="Advertencia" title="Advertencia" width="30" height="30" /> <strong>Advertencia</strong><br />Aínda que tamén se admita inserir unha data escrita como un texto con notación <strong><span style="font-family: 'courier new', courier;">"DD/MM/YYYY"</span></strong> non é recomendable se imos intercambiar a nosa folla con usuarios que utilicen outro formato de datas.</p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id104">
+<div class="iDevice emphasis0">
+<div id="ta104_1" class="block iDevice_content">
+<figure class="exe-figure exe-media position-center" style="width: 800px;"><iframe width="800" height="450" src="//www.youtube.com/embed/_FeRkBZh31A" allowfullscreen="allowfullscreen"></iframe>
+<figcaption class="figcaption"><span class="title"><em>Vídeo: Funciones de fecha</em></span></figcaption>
+</figure>
+<p> </p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Licenciado baixo a</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licenza Creative Commons Recoñecemento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="funcins_de_texto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funcins_lxicas.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

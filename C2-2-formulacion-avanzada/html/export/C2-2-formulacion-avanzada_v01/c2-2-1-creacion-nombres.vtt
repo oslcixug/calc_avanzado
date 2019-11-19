@@ -1,0 +1,163 @@
+WEBVTT
+
+00:02.600 --> 00:07.180
+En este vídeo mostraremos como asignar nombres a celdas y rangos de celdas.
+
+00:07.720 --> 00:14.640
+Los nombres nos permiten ser utilizados en las fórmulas en lugar de las habituales referencias a fila y columna, como A1.
+
+00:15.220 --> 00:23.520
+En la hoja de ejemplo tenemos una lista de productos con nombre, unidades y precio, en las columnas A, B y C, respectivamente.
+
+00:24.200 --> 00:33.060
+La primera fila de estas columnas está reservada para los encabezados, estando los datos ubicados desde la fila 2 hasta la 14.
+
+00:35.420 --> 00:39.120
+También tenemos un porcentaje de IVA en la celda F1.
+
+00:40.540 --> 00:44.500
+En primer lugar crearemos un nombre para la celda que contiene el porcentaje de IVA.
+
+00:44.700 --> 00:46.540
+Nos situamos en la celda F1.
+
+00:47.720 --> 00:52.020
+Hacemos clic en el cuadro de nombres a la izquierda de la barra de fórmulas.
+
+00:52.820 --> 00:57.420
+Escribimos el texto "IVA" y pulsamos Intro.  
+
+00:57.900 --> 01:03.220
+Es muy importante pulsar Intro, pues si nos limitamos a hacer clic en cualquier otro sitio, no quedará fijado el nombre.
+
+01:04.460 --> 01:11.740
+Ahora podemos comprobar que si hacemos clic en cualquier celda, el cuadro de nombres mostrará la referencia de fila y columna...
+
+01:12.100 --> 01:18.420
+... pero si hacemos clic en la celda F1, el cuadro de nombres mostrará el nombre "IVA" que le hemos asignado.
+
+01:19.140 --> 01:22.120
+Este nombre puede servir para navegar rápidamente a la celda.
+
+01:22.600 --> 01:30.360
+Si hacemos clic en cualquier otro sitio, y desplegamos el cuadro de nombres, mostrará la lista de nombres creados.
+
+01:30.460 --> 01:38.480
+En este momento solo hay el nombre "IVA", si lo seleccionamos nos desplazaremos inmediatamente a la celda F1.
+
+01:40.360 --> 01:44.480
+Esto lo podremos hacer desde cualquier hoja del libro, en caso de haber más de una.
+
+01:46.880 --> 01:58.060
+Si queremos eliminar o modificar un nombre podemos acceder desde el menú Hoja, donde en el submenú "Intervalos y expresiones con nombre"...
+
+01:59.280 --> 02:05.120
+... podemos seleccionar "Gestionar", que abrirá el cuadro de diálogo "Gestionar nombres".
+
+02:08.500 --> 02:12.760
+En este cuadro de diálogo aparecerá toda la lista de nombres definidos.
+
+02:13.900 --> 02:17.700
+Seleccionando un nombre de la lista, en nuestro ejemplo "IVA"...
+
+02:18.500 --> 02:21.460
+... podemos cambiar su nombre, en el cuadro "Nombre"...
+
+02:22.240 --> 02:28.380
+... o la referencia de la celda apuntada, en el cuadro "Intervalo o expresión de fórmula".
+
+02:29.680 --> 02:33.020
+También podremos eliminarlo, pulsando sobre el botón Eliminar.
+
+02:34.320 --> 02:39.340
+Una cosa a tener presente es que los nombres para intervalos de celdas no admiten espacios.
+
+02:39.700 --> 02:46.020
+Si necesitamos un nombre con más de una palabra, deberemos escribirlas juntas y como separador podemos usar un guión bajo...
+
+02:46.340 --> 02:49.120
+... o también combinando mayúsculas y minúsculas.
+
+02:49.440 --> 02:53.280
+Vamos a reemplazar el nombre "IVA" por otro nombre "Porcentaje IVA"
+
+02:56.200 --> 02:58.620
+Escribimos este nombre con espacio
+
+03:07.640 --> 03:12.360
+Un aviso casi imperceptible nos advierte de que no se admiten espacios.
+
+03:13.220 --> 03:21.940
+Si no nos damos cuenta y Aceptamos, sólo se tomará como nombre el texto anterior al espacio, en este ejemplo "Porcentaje".
+
+03:25.940 --> 03:30.840
+También podemos acceder al diálogo "Gestionar nombres" desde el mismo desplegable del cuadro de nombres.
+
+03:34.000 --> 03:41.340
+Como comentábamos, podemos escribir el nombre separándolo con guiones bajos, como en "Porcentaje_IVA"...
+
+03:48.440 --> 03:52.960
+... o simplemente combinando mayúsculas y minúsculas.
+
+03:58.560 --> 04:07.480
+dejando las dos palabras juntas, como "PorcentajeIVA", se lee bastante bien.  Lo vamos a dejar así.
+
+04:08.900 --> 04:19.860
+Tras aceptar, podemos comprobar que el nombre ha sido actualizado y sigue haciendo referencia a la misma celda F1.
+
+04:22.560 --> 04:27.460
+A veces querremos crear nombres para un conjunto de rangos en forma de tabla.
+
+04:27.760 --> 04:36.220
+En nuestro ejemplo queremos crear un nombre "PRODUCTO" para toda la lista de productos contenidos en el intervalo desde A2 hasta 14...
+
+04:37.540 --> 04:42.080
+... otro nombre "UNIDADES" para el rango desde B2 hasta B14...
+
+04:42.880 --> 04:48.580
+... y otro nombre "PRECIO" para C2 hasta C14.
+
+04:49.860 --> 04:56.520
+Sólo son tres rangos de celdas, pero podríamos necesitar hacerlo con un docena o más.  Eso resultaría muy tedioso.
+
+04:57.040 --> 05:00.960
+En esos casos, resultará muy fácil crear los nombres a partir de una selección.
+
+05:01.760 --> 05:06.420
+Seleccionamos la tabla de datos desde A1 hasta C14... 
+
+05:07.940 --> 05:16.640
+... y desde el menú Hoja, en "Intervalos y expresiones con nombre" seleccionamos "Crear".
+
+05:19.540 --> 05:29.100
+Aparece el diálogo "Crear nombres" donde nos sugiere crear nombres desde la fila superior y desde la columna izquierda.
+
+05:29.660 --> 05:32.700
+Realmente sólo queremos crear nombres desde la fila superior.
+
+05:33.360 --> 05:37.960
+Si aceptásemos así el diálogo también nos crearía nombres para cada uno de los productos.
+
+05:38.260 --> 05:47.000
+Por ejemplo, crearía el nombre "DX386-40" que haría referencia al intervalo de B2 hasta C2.
+
+05:48.540 --> 05:51.280
+Por eso, desactivamos la casilla "Columna izquierda".
+
+05:53.180 --> 05:57.780
+Aceptamos y desplegamos el cuadro de nombres.
+
+05:59.980 --> 06:08.520
+Comprobamos que al nombre "PorcentajeIVA" se han añadido los nombres "PRECIO", "PRODUCTO" Y "UNIDADES".
+
+06:09.880 --> 06:16.100
+Y cada uno de ellos hace referencia al intervalo de celdas correspondiente.
+
+06:19.820 --> 06:26.280
+En otros vídeos mostramos la facilidad y la utilidad que puede representarnos el uso de estos nombres para crear fórmulas.
+
+06:26.880 --> 06:33.560
+Esperamos que os haya resultado interesante esta técnica de crear nombres para referenciar celdas o rangos de celdas.
+
+06:33.760 --> 06:35.560
+Muchas gracias por vuestra atención.

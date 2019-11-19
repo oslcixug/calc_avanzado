@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="gl">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Funcións lóxicas | Formulación avanzada en Calc </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Rafael Rodríguez Gayoso (gl) - Ismael Fanlo y Salvador Doménech" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-50"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegación</a></p>
+<header id="header" ><div id="headerContent">Formulación avanzada en Calc</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Formulación avanzada</a></li>
+   <li><a href="uso_do_asistente_de_funcins.html" class="no-ch">Uso do Asistente de funcións</a></li>
+   <li><a href="uso_de_nomes_en_frmulas_e_funcins.html" class="no-ch">Uso de nomes en fórmulas e funcións</a></li>
+   <li><a href="uso_de_expresins_lxicas.html" class="no-ch">Uso de expresións lóxicas</a></li>
+   <li><a href="aniado_de_funcins.html" class="no-ch">Aniñado de funcións</a></li>
+   <li><a href="uso_de_comodns_ou_expresins_regulares.html" class="no-ch">Uso de comodíns ou expresións regulares</a></li>
+   <li><a href="funcins_de_contar_e_sumar.html" class="no-ch">Funcións de contar e sumar</a></li>
+   <li><a href="funcins_de_texto.html" class="no-ch">Funcións de texto</a></li>
+   <li><a href="funcins_de_data_e_hora.html" class="no-ch">Funcións de data e hora</a></li>
+   <li id="active"><a href="funcins_lxicas.html" class="active no-ch">Funcións lóxicas</a></li>
+   <li><a href="funcins_de_folla_de_clculo.html" class="no-ch">Funcións de folla de cálculo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="funcins_de_data_e_hora.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funcins_de_folla_de_clculo.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Funcións lóxicas</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id118">
+<div class="iDevice emphasis0">
+<div id="ta118_1" class="block iDevice_content">
+<p>En diferentes ocasións podemos vernos na necesidade de avaliar de xeito simultáneo diferentes condicións lóxicas, para comprobar se se cumplen todas ou só algunha delas, así como tamén comprobar a negación dunha expresión lóxica.</p>
+<p>Para isto dispoñemos destas funcións <strong>NON()</strong>, <strong>E()</strong>, <strong>OU()</strong>.</p>
+<p>Ou tomar decisións, avaliando unha pregunta e actuando dun xeito se a resposta é <strong>VERDADEIRO</strong>, ou doutra se é <strong>FALSO</strong>. Para tomar decisións dispoñemos da función <strong>SE()</strong>.</p>
+<h2>Función SE()</h2>
+<p><strong>SE</strong> permite obter un valor ou outro en función dunha expresión lóxica dada.  </p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><strong><span style="font-family: 'courier new', courier;">=SE(Expresión_lóxica;[Valor_se_VERDADEIRO];[Valor_se_FALSO])</span></strong></p>
+<p>onde:</p>
+<ul>
+<li><strong>Expresión_lóxica</strong> é a condición ou comparación que se desexa avaliar.</li>
+<li><strong>Valor_se_VERDADEIRO</strong> é o resultado que devolverá a función se a Expresión_lóxica se resolve como <strong>VERDADEIRO</strong>. Este argumento é opcional; de omitilo, a función devolverá <strong>VERDADEIRO</strong>.</li>
+<li><strong>Valor_se_FALSO</strong> é o resultado que devolverá a función se a Expresión_lóxica se resolve como FALSO. Este argumento é opcional; de omitilo, a función devolverá <strong>FALSO</strong>.</li>
+</ul>
+<p>Nos seguintes exemplos amósase o texto APROBADO se a nota do exame é igual ou superior a 5, ou SUSPENSO en caso contrario.</p>
+<p><img src="C2-2-formulacion-avanzada-100.png" alt="Función SI" title="Función SI" style="display: block; margin-left: auto; margin-right: auto;" width="652" height="194" /></p>
+<p>A función <strong>SE()</strong> ten uhna limitación e é que ao ser tan binaria, para ela somos baixos ou altos, gordos ou delgados, brancos ou negros, pois só nos permite escoller entre dúas opcións. E a vida real ten moitos máis matices. Imos ver un exemplo tan sinxelo como o anterior, en que a continuación duns resultados económicos amósase o termo BENEFICIOS ou PERDAS en función dos mesmos. Que ocorre cando o resultado é exactamente cero?</p>
+<p><img src="C2-2-formulacion-avanzada-101.png" alt="Función SI" title="Función SI" style="display: block; margin-left: auto; margin-right: auto;" width="591" height="184" /></p>
+<p>A todos nos consta que un resultado cero non representa beneficios de ningún tipo, pero tampouco podemos afirmar que se trate de pérdidas. Nun caso así, necesitamos unha terceira opción, NULO ou algo parecido para poder cualificar correctamente.  Aí é onde entra en xogo o aniñamento de funcións. Despois de comprobar que o resultado non é maior que cero, quedan dúas posibilidades: que sexa igual a cero, ou que sexa menor que cero. Polo tanto, imos cambiar o terceiro argumento da función <strong>SE()</strong>, por outra función <strong>SE()</strong> que avalíe esta segunda expresión. No caso do exemplo...</p>
+<p><img src="C2-2-formulacion-avanzada-102.png" alt="Función SI anidada" title="Función SI anidada" style="display: block; margin-left: auto; margin-right: auto;" width="769" height="192" /></p>
+<p>Aplicamos unha sombra á función aniñada para facilitar a súa lectura.</p>
+<p>Polo tanto, podemos deducir que para avaliar dúas opcións, basta cunha función <strong>SE()</strong>, para avaliar máis opcións, necesitaremos unha nova función <strong>SE()</strong> por cada nova opción.</p>
+<p>O incremento de funcións aniñadas pode converter a fórmula en algo difícil de manexar e proclive a erros complexos de depurar. Por iso, se vemos que necesitamos un excesivo número de funcións <strong>SE</strong> aniñadas, comprobaremos no próximo apartado que, cunha pequena modificación de enfoque, podemos resolver o problema con extrema facilidade usando a función <strong>PROCV</strong><strong></strong>.</p>
+<h2>Función NON()</h2>
+<p><strong>NON</strong> inverte o valor lóxico do argumento.  </p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=NON(Expresión_lóxica)</strong></span></p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong><img src="C2-2-formulacion-avanzada-103.png" alt="Función NO" title="Función NO" width="452" height="85" /></strong></span></p>
+<h2>Función E()</h2>
+<p><strong>E</strong> devolve <strong>VERDADEIRO</strong>, se todos os argumentos son <strong>VERDADEIRO</strong>; en calquera outro caso, devolve <strong>FALSO</strong>.  </p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><strong><span style="font-family: 'courier new', courier;">=E(Expr_lóxica1;[Expr_lóxica2];...)</span></strong></p>
+<p style="text-align: center;"><strong><span style="font-family: 'courier new', courier;"><img src="C2-2-formulacion-avanzada-104.png" alt="Tabla de la verdad de la función Y" title="Tabla de la verdad de la función Y" width="511" height="147" /></span></strong></p>
+<p>No exemplo, unha <em>táboa da verdade</em><em></em> da función <strong>E</strong>.</p>
+<h2>Función OU()</h2>
+<p><strong>OU</strong> devolve <strong>FALSO</strong>, se todos os argumentos son <strong>FALSO</strong>; en calquera outro caso, devolve <strong>VERDADEIRO</strong>.</p>
+<p>Sintaxe básica:</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=OU(Expr_lóxica1;[Expr_lóxica2];...)</strong></span></p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong><img src="C2-2-formulacion-avanzada-105.png" alt="Tabla de la verdad de la función O" title="Tabla de la verdad de la función O" width="525" height="140" /></strong></span></p>
+<p><span>No exemplo, unha </span><em>táboa da</em><span> </span><em>verdade</em><span> da función <strong>OU</strong></span><span>.</span></p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Licenciado baixo a</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licenza Creative Commons Recoñecemento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="funcins_de_data_e_hora.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funcins_de_folla_de_clculo.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

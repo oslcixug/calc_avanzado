@@ -1,0 +1,533 @@
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-1-trabajo-estilos-calc
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-1-trabajo-estilos-calc
+
+
+// question: 15293  name: C2-1-02
+::C2-1-02::[html]<p>Cal das seguintes afirmacións é correcta?<br></p>{
+	~<p>Ao crear novos estilos de cela, estes quedan almacenados no modelo predeterminado.<br></p>
+	=<p>Ao crear novos estilos de celda, estes quedan almacenados no documento.<br></p>
+}
+
+
+// question: 15294  name: C2-1-03
+::C2-1-03::[html]<p>Cal dos seguintes NON é un tipo de estilo existente en <b>Calc</b>?</p>{
+	~<p>Estilos de cela</p>
+	=<p>Estilos de parágrafo</p>
+	~<p>Estilos de páxina</p>
+}
+
+
+// question: 15295  name: C2-1-05
+::C2-1-05::[html]<p>Cal é a tecla de función que permite abrir o panel de <b>Estilos</b>?</p>{
+	~<p><b>F1</b></p>
+	~<p><b>F12</b></p>
+	=<p><b>F11</b></p>
+	~<p><b>F5</b></p>
+}
+
+
+// question: 15296  name: C2-1-06
+::C2-1-06::[html]<p>Nun documento de <b>Calc</b>, o estilo de cela&nbsp;<b>Heading 1</b>&nbsp;(ou <b>Título 1</b>, segundo a versión) foi modifcado para que aplique un tamaño de letra de 14 puntos e o estilo de cela <b>Predeterminado</b>&nbsp;estabelece un tamaño de letra de 12 puntos.&nbsp; Creamos un novo estilo de cela <b>Persoal</b>, baseado en <b>Heading 1</b> e lle asignamos un tamaño de letra de 13 puntos. Que tamaño de letra terá unha cela cando se lle aplica o estilo <b>Persoal</b>?</p>{
+	~<p>12 puntos</p>
+	=<p>13 puntos</p>
+	~<p>14 puntos</p>
+}
+
+
+// question: 15297  name: C2-1-07
+::C2-1-07::[html]<p>Nun documento de <b>Calc</b>, o estilo de cela&nbsp;<b>Heading 1</b>&nbsp;(ou <b>Título 1</b>, segundo a versión) foi modificado para que aplique un tamaño de letra de 14 puntos e o estilo de cela <b>Predeterminado</b>&nbsp;estabelece un tamaño de letra de 12 puntos.&nbsp; Creamos un novo estilo de cela <b>Persoal</b>, baseado en <b>Heading 1</b>, sen especificar tamaño de letra. Que tamaño de letra terá uhna celda cando se aplica o estilo <b>Persoal</b>?</p>{
+	~<p>12 puntos</p>
+	~<p>13 puntos</p>
+	=<p>14 puntos</p>
+}
+
+
+// question: 15298  name: C2-1-09
+::C2-1-09::[html]<p>Cal das seguintes afirmacións é correcta?</p>{
+	~<p>Pode eliminarse calquera estilo de cela</p>
+	=<p>Só se poden eliminar os estilos de cela personalizados</p>
+	~<p>Pode eliminarse todos os estilos agás o <b>Predeterminado</b></p>
+}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-2-formulacion-avanzada
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-2-formulacion-avanzada
+
+
+// question: 15303  name: C2-2-01
+::C2-2-01::[html]Queremos obter a media aritmética do intervalo de celas  entre A1 e B10, a cela D1 e a cela D5. Cal é a fórmula correcta?{
+	=<p>\=MEDIA(A1\:B10;D1;D5)</p>
+	~<p>\=MEDIA(A1\:B10,D1,D5)<br></p>
+	~<p>\=MEDIA(A1\:B10;D1\:D5)<br></p>
+	~<p>\=MEDIANA(A1\:B10;D1;D5)<br></p>
+}
+
+
+// question: 15304  name: C2-2-03
+::C2-2-03::[html]Dada a siguiente representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=CONTA(A1\:A5)</b><br></p><p></p><p></p>{
+	=<p>0</p>
+	~<p>4</p>
+	~<p>5</p>
+	~<p>\#N/A</p>
+}
+
+
+// question: 15305  name: C2-2-04
+::C2-2-04::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=CONTA(B1\:B5)</b><br></p><p></p><p></p>{
+	~<p>0</p>
+	~<p>4</p>
+	=<p>5</p>
+	~<p>\#N/A</p>
+}
+
+
+// question: 15306  name: C2-2-05
+::C2-2-05::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=CONTARSE(B1\:B5;"&gt;2")</b><br></p><p></p><p></p>{
+	~<p>0</p>
+	=<p>3</p>
+	~<p>5</p>
+	~<p>\#N/D</p>
+}
+
+
+// question: 15307  name: C2-2-06
+::C2-2-06::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=SUMARSE(A1\:A5;"&lt;&gt;CB";B1\:B5)</b><br></p><p></p><p></p>{
+	~<p>0</p>
+	=<p>8</p>
+	~<p>5</p>
+	~<p>\#N/A</p>
+}
+
+
+// question: 15308  name: C2-2-07
+::C2-2-07::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=MEDIASE(A1\:A5;"A*";C1\:C5)</b><br></p><p></p><p></p>{
+	~<p>0</p>
+	=<p>2</p>
+	~<p>2,5</p>
+	~<p>\#DIV/0!</p>
+}
+
+
+// question: 15309  name: C2-2-08
+::C2-2-08::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=CONCATENAR(A1;B3;A5)</b><br></p><p></p><p></p>{
+	~<p>AA2AB</p>
+	=<p>AB2AA</p>
+	~<p>2ABAA</p>
+	~<p>\#N/A</p>
+}
+
+
+// question: 15310  name: C2-2-09
+::C2-2-09::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=SE(B5&gt;C5;"B";"C")</b><br></p><p></p><p></p>{
+	~<p>AA</p>
+	=<p>C</p>
+	~<p>B</p>
+	~<p>\#N/A</p>
+}
+
+
+// question: 15311  name: C2-2-10
+::C2-2-10::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=SE(B5&gt;C5;"B";SE(ESQUERDA(A5)\="A";"A";"C"))</b><br></p><p></p><p></p>{
+	~<p>C</p>
+	=<p>A</p>
+	~<p>B</p>
+	~<p>\#N/D</p>
+}
+
+
+// question: 15312  name: C2-2-11
+::C2-2-11::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=PROCV("BA";A1\:C5;2;0)</b><br></p><p></p><p></p>{
+	~<p>2</p>
+	~<p>3</p>
+	~<p>1</p>
+	=<p>\#N/A</p>
+}
+
+
+// question: 15313  name: C2-2-12
+::C2-2-12::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=DATA(2018;PROCV("AA";A1\:C5;2;0);PROCV("AA<b>";A1\:C5;3;0)</b></b><br></p><p></p><p></p>{
+	=<p>03/02/2018</p>
+	~<p>02/03/2018</p>
+	~<p>02/02/2018</p>
+	~<p>\#N/A</p>
+}
+
+
+// question: 15314  name: C2-2-13
+::C2-2-13::[html]<p>Cal será o resultado de escribir nunha cela a seguinte fórmula?\:&nbsp;<br><b>\=DATA(2018;12;30)-DATA(2018;11;30)</b></p>{
+	~<p>1</p>
+	=<p>30</p>
+	~<p>31</p>
+	~<p>\#N/A</p>
+}
+
+
+// question: 15315  name: C2-2-14
+::C2-2-14::[html]Dada a seguinte representación dos datos dunha folla de cálculo\:<p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="30"></colgroup>\n	<colgroup width\="73"></colgroup>\n	<colgroup width\="64" span\="2"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#F5F5F5" align\="center"><b><br></b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>A</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>B</b></td>\n		<td bgcolor\="\#F5F5F5" align\="center"><b>C</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>1</b></td>\n		<td align\="center">AB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>2</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>3</b></td>\n		<td align\="center">CB</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>4</b></td>\n		<td align\="center">BB</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#F5F5F5" align\="center"><b>5</b></td>\n		<td align\="center">AA</td>\n		<td sdval\="2" sdnum\="3082;" align\="center">2</td>\n		<td sdval\="3" sdnum\="3082;" align\="center">3</td></tr></tbody></table><p></p><p>Cal será o resultado da seguinte fórmula?\:&nbsp;<br><b>\=CONTARA(A1\:B2)</b><br></p><p></p><p></p>{
+	~<p>0</p>
+	=<p>4</p>
+	~<p>2</p>
+	~<p>\#N/A</p>
+}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-3-formatos-condicionales
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-3-formatos-condicionales
+
+
+// question: 15317  name: C2-3-06
+::C2-3-06::[html]<p>Que fórmula foi aplicada no formato condicional dos datos para obter o resultado que se amosa na seguinte táboa?<br></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="27"></colgroup>\n	<colgroup width\="57" span\="4"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#DCDCDC" align\="center"><br></td>\n		<td bgcolor\="\#DCDCDC" align\="center">A</td>\n		<td bgcolor\="\#DCDCDC" align\="center">B</td>\n		<td bgcolor\="\#DCDCDC" align\="center">C</td>\n		<td bgcolor\="\#DCDCDC" align\="center">D</td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">1</td>\n		<td bgcolor\="\#CCFFCC" align\="center">CBA</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">3</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">2</td>\n		<td bgcolor\="\#FFFFFF" align\="center">AAC</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">3</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">4</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">3</td>\n		<td bgcolor\="\#FFFFFF" align\="center">BBB</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">4</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">4</td>\n		<td bgcolor\="\#FFFFFF" align\="center">BBC</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">2</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">2</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">5</td>\n		<td bgcolor\="\#CCFFCC" align\="center">CBA</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n	</tr>\n</tbody></table><br><p></p>{
+	=<p>ESQUERDA($A1;2)\="CB"<br></p>
+	~<p>ESQUERDA($A5;2)\="CB"</p>
+	~<p>ESQUERDA($A$1;2)\="CB"<br></p>
+	~<p>ESQUERDA($A$5;2)\="CB"<br></p>
+}
+
+
+// question: 15318  name: C2-3-07
+::C2-3-07::[html]<p>Que fórmula foi aplicada no formato condicional dos datos para obter o resultado que se amosa na seguinte táboa?</p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="27"></colgroup>\n	<colgroup width\="57" span\="4"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#DCDCDC" align\="center"><br></td>\n		<td bgcolor\="\#DCDCDC" align\="center">A</td>\n		<td bgcolor\="\#DCDCDC" align\="center">B</td>\n		<td bgcolor\="\#DCDCDC" align\="center">C</td>\n		<td bgcolor\="\#DCDCDC" align\="center">D</td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">1</td>\n		<td bgcolor\="\#FFFFFF" align\="center">CBA</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">3</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">2</td>\n		<td bgcolor\="\#CCFFCC" align\="center">AAC</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">3</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">4</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">3</td>\n		<td bgcolor\="\#CCFFCC" align\="center">BBB</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">1</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">4</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">4</td>\n		<td bgcolor\="\#CCFFCC" align\="center">BBC</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">1</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">2</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">2</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center">5</td>\n		<td bgcolor\="\#FFFFFF" align\="center">CBA</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n	</tr>\n</tbody></table><br><p></p><p></p>{
+	=<p>$C1&lt;5<br></p>
+	~<p>$C2&lt;5</p>
+	~<p>$D1&gt;2<br></p>
+	~<p>$C$1&lt;5<br></p>
+}
+
+
+// question: 15319  name: C2-3-08
+::C2-3-08::[html]<p><p>Que fórmula foi aplicada no formato condicional dos datos para obter o resultado que se amosa na seguinte táboa?</p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="27"></colgroup>\n	<colgroup width\="57" span\="4"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#DCDCDC" align\="center"><b><br></b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>A</b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>B</b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>C</b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>D</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>1</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">CBA</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">3</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>2</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">AAC</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">3</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">4</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>3</b></td>\n		<td bgcolor\="\#CCFFCC" align\="center">BBB</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">1</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">4</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>4</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">BBC</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">2</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">2</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>5</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">CBA</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n	</tr>\n</tbody></table><br><p></p><p></p><p></p>{
+	=<p>E($C1&lt;4;$D1&gt;2)<br></p>
+	~<p>E($C$1&lt;4;$D$1&gt;2)</p>
+	~<p>E(C1&lt;4;D1&gt;2)<br></p>
+	~<p>E($C1&lt;\=4;$D1&gt;2)<br></p>
+}
+
+
+// question: 15320  name: C2-3-09
+::C2-3-09::[html]<p><p>Que fórmula foi aplicada no formato condicional dos datos para obter o resultado que se amosa na seguinte táboa?</p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="27"></colgroup>\n	<colgroup width\="57" span\="4"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#DCDCDC" align\="center"><b><br></b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>A</b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>B</b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>C</b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>D</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>1</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">CBA</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">3</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>2</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">AAC</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">3</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">4</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>3</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">BBB</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">4</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>4</b></td>\n		<td bgcolor\="\#CCFFCC" align\="center">BBC</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">1</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">2</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">2</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>5</b></td>\n		<td bgcolor\="\#CCFFCC" align\="center">CBA</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n	</tr>\n</tbody></table><br><p></p><p></p><p></p><p></p>{
+	=<p>$C1\=$D1<br></p>
+	~<p>C1\=D1</p>
+	~<p>$C4\=$D4<br></p>
+	~<p>$C$1\=$D$1<br></p>
+}
+
+
+// question: 15321  name: C2-3-10
+::C2-3-10::[html]<p><p>Que fórmula foi aplicada no formato condicional dos datos para obter o resultado que se amosa na seguinte táboa?</p></p><p></p><table cellspacing\="0" border\="1">\n	<colgroup width\="27"></colgroup>\n	<colgroup width\="57" span\="4"></colgroup>\n	<tbody><tr>\n		<td height\="17" bgcolor\="\#DCDCDC" align\="center"><b><br></b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>A</b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>B</b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>C</b></td>\n		<td bgcolor\="\#DCDCDC" align\="center"><b>D</b></td>\n	</tr>\n	<tr>\n		<td sdval\="1" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>1</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">CBA</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">3</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n	</tr>\n	<tr>\n		<td sdval\="2" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>2</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">AAC</td>\n		<td sdval\="3" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">3</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">4</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n	</tr>\n	<tr>\n		<td sdval\="3" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>3</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">BBB</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">2</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n		<td sdval\="4" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">4</td>\n	</tr>\n	<tr>\n		<td sdval\="4" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>4</b></td>\n		<td bgcolor\="\#FFFFFF" align\="center">BBC</td>\n		<td sdval\="1" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">1</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">2</td>\n		<td sdval\="2" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">2</td>\n	</tr>\n	<tr>\n		<td sdval\="5" sdnum\="3082;" height\="17" bgcolor\="\#DCDCDC" align\="center"><b>5</b></td>\n		<td bgcolor\="\#CCFFCC" align\="center">CBA</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#CCFFCC" align\="center">5</td>\n		<td sdval\="5" sdnum\="3082;" bgcolor\="\#FFFFFF" align\="center">5</td>\n	</tr>\n</tbody></table><br><p></p><p></p><p></p><p></p><p></p>{
+	=<p>B1\=5<br></p>
+	~<p>B$1\=5</p>
+	~<p>$B1\=5<br></p>
+	~<p>$B$1\=5<br></p>
+}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-4-tablas-dinamicas
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-4-tablas-dinamicas
+
+
+// question: 15327  name: C2-4-03
+::C2-4-03::[html]<p>Cal das seguintes NON é unha área de datos dispoñible no cadro de diálogo "Disposición de taboa dinámica" que permite deseñar unha táboa dinámica?</p>{
+	=<p>Campos de estatística</p>
+	~<p>Campos de páxina</p>
+	~<p>Campos de datos</p>
+	~<p>Campos dispoñibles</p>
+}
+
+
+// question: 15328  name: C2-4-04
+::C2-4-04::[html]<p>En que área do cadro de  diálogo "Disposición de táboa dinámica" se deberán colocar os campos que permitan estabelecer filtros sobre os resultados da táboa dinámica, aínda que non se amosen na mesma?</p>{
+	=<p>Campos de páxina</p>
+	~<p>Campos dispoñibles</p>
+	~<p>Campos de datos</p>
+	~<p>Campos de fila</p>
+}
+
+
+// question: 15329  name: C2-4-05
+::C2-4-05::[html]<p>Que opción hai que habilitar para que ao facer dobre clic sobre un valor da táboa dinámica se abra unha nova folla con todos os datos de detalle agrupados nese valor?</p>{
+	=<p>Activar análise detallado</p>
+	~<p>Non é posible facer iso<br></p>
+	~<p>Iso sempre se fai por defecto. Non hai que habilitar ningunha opción.&nbsp;&nbsp;</p>
+	~<p>Identificar categorías</p>
+}
+
+
+// question: 15330  name: C2-4-09
+::C2-4-09::[html]<p>Cal dos seguintes tipos de cálculo NON se pode facer nunha táboa dinámica?</p>{
+	=<p>CONTARSE</p>
+	~<p>PRODUTO<br></p>
+	~<p>MEDIANA</p>
+	~<p>VARIANZA</p>
+}
+
+
+// question: 15331  name: C2-4-10
+::C2-4-10::[html]<p>Que atallo de teclado permite agrupar datos nunha táboa dinámica?</p>{
+	=<p>F12</p>
+	~<p>F4</p>
+	~<p>F5</p>
+	~<p>Por defecto, non hai ningún atallo de teclado. Hai que configuralo.<br></p>
+}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-5-trabajar-hipotesis
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-5-trabajar-hipotesis
+
+
+// question: 15337  name: C2-5-01
+::C2-5-01::[html]<p>Cal das seguintes opcións nos permite crear un escenario en <b>Calc</b>?</p>{
+	=<p>No menú <b>Ferramentas &gt; Escenarios</b></p>
+	~<p>No menú <b>Editar &gt; Escenarios</b></p>
+	~<p>No menú <b>Inserir &gt; Escenarios</b></p>
+}
+
+
+// question: 15338  name: C2-5-02
+::C2-5-02::[html]<p>Cal das seguintes ferrramentas NON está orientada a traballar con hipóteses e previsións?</p>{
+	=<p>O <b>Detective</b></p>
+	~<p>O <b>Resolvedor</b><b></b></p>
+	~<p>Os <b>Escenarios</b></p>
+	~<p>A <b>Busca de obxectivo<br></b></p>
+}
+
+
+// question: 15339  name: C2-5-03
+::C2-5-03::[html]<p>A ferramenta <b>Busca de obxectivo</b> permite...</p>{
+	~<p>Resolver unha incógnita para maximizar ou minimizar un resultado.</p>
+	=<p>Resolver unha incógnita para obter un resultado concreto.<br></p>
+	~<p>Resolver varias incógnitas para obter un resultado concreto.<br></p>
+	~<p>Resolver varias incógnitas para maximizar ou minimizar un resultado.<br></p>
+}
+
+
+// question: 15340  name: C2-5-04
+::C2-5-04::[html]<p>A ferramenta <b>Resolvedor</b> permite...</p>{
+	~<p>Resolver unha incógnita para maximizar ou minimizar un resultado.</p>
+	~<p>Resolver unha incógnita para obter un resultado concreto.<br></p>
+	~<p>Resolver varias incógnitas para obter un resultado concreto.<br></p>
+	=<p>Resolver varias incógnitas para maximizar ou minimizar un resultado.<br></p>
+}
+
+
+// question: 15341  name: C2-5-07
+::C2-5-07::[html]<p>En que caso o menú <b>Ferramentas</b> NON amosa habilitada a ferramenta <b>Escenarios</b>?</p>{
+	=<p>Cando non hai ningunha cela seleccionada</p>
+	~<p>Cuando o ficheiro é un libro de <b>Excel</b></p>
+	~<p>Cuando a área seleccionada non contén fórmulas</p>
+	~<p>A ferramenta <b>Escenarios</b>&nbsp;sempre está habilitada</p>
+}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-6-proteccion-documentos
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-6-proteccion-documentos
+
+
+// question: 15347  name: C2-6-01
+::C2-6-01::[html]<p>Para protexer o contido dunha folla de cálculo dentro dun documento de <b>Calc</b>&nbsp;hai que...</p>{
+	=<p>... desprotexer as celas que queremos poder editar e logo protexer a folla.</p>
+	~<p>... protexer as celas que non queremos poder editar e logo protexer a folla.<br></p>
+	~<p>... desprotexer as celas que queremos poder editar e logo protexer o documento.<br></p>
+	~<p>... protexer as celas que non queremos poder editar e logo protexer o documento.<br></p>
+}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-7-personalizacion-interfaz
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-7-personalizacion-interfaz
+
+
+// question: 15359  name: C2-7-03
+::C2-7-03::[html]<p>¿Cuál de las siguientes NO es una pestaña del cuadro de diálogo <b>Personalizar</b>?</p>{
+	=<p>Propiedades</p>
+	~<p>Sucesos</p>
+	~<p>Menús contextuales</p>
+	~<p>Teclado</p>
+}
+
+
+// question: 15360  name: C2-7-04
+::C2-7-04::[html]<p>¿Cuál de las siguientes NO permite activar o desactivar la visibilidad de los botones en una barra de herramientas?</p>{
+	=<p>Pulsar sobre el&nbsp;<b>»</b> (doble ángulo) al extremo derecho de la barra de herramientas.</p>
+	~<p>Desde el cuadro de diálogo <b>Personalizar</b>.</p>
+	~<p>Desde el menú contextual de la barra de herramientas.</p>
+}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-1-trabajo-estilos-calc
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-1-trabajo-estilos-calc
+
+
+// question: 15300  name: C2-1-04
+::C2-1-04::[html]<p>Se queremos, un estilo de cela pode aplicarse a só unha parte do contido da cela.</p>{FALSE}
+
+
+// question: 15301  name: C2-1-08
+::C2-1-08::[html]<p>Só se poede modificar un estilo dende o panel de <b>Estilos</b>.</p>{FALSE}
+
+
+// question: 15302  name: C2-1-10
+::C2-1-10::[html]<p>Poden crearse novos estilos dende o menú <b>Formato</b>.</p>{FALSE}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-2-formulacion-avanzada
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-2-formulacion-avanzada
+
+
+// question: 15316  name: C2-2-02
+::C2-2-02::[html]<p>O asistente de funcións tamén permite introducir ou modificar funcións aniñadas.</p>{TRUE}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-3-formatos-condicionales
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-3-formatos-condicionales
+
+
+// question: 15322  name: C2-3-01
+::C2-3-01::[html]<p>Ao aplicar a un intervalo de celas un formato condicional baseado nunha condición, pode haber celas onde non se aplicará o formato.</p>{TRUE}
+
+
+// question: 15323  name: C2-3-02
+::C2-3-02::[html]<p>Ao aplicar a un intervalo de celas un formato condicional de barra de datos, pode haber celas onde non se aplicará o formato.</p>{FALSE}
+
+
+// question: 15324  name: C2-3-03
+::C2-3-03::[html]<p>Nun formato condicional baseado nunha condición, pode estabelecerse un formato aínda que non exista ningún estilo de cela con ese formato.</p>{FALSE}
+
+
+// question: 15325  name: C2-3-04
+::C2-3-04::[html]<p>Nun formato condicional de tipo "A data é" pode estabelecerse unha data arbitraria coa que comprobar a condición.</p>{FALSE}
+
+
+// question: 15326  name: C2-3-05
+::C2-3-05::[html]<p>Poden estabelecerse formatos condicionais que resalten valores duplicados nun intervalo de celas.</p>{TRUE}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-4-tablas-dinamicas
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-4-tablas-dinamicas
+
+
+// question: 15332  name: C2-4-01
+::C2-4-01::[html]<p>Para crear unha táboa dinámica é imprescindible seleccionar todos os datos da táboa de datos orixinal.</p>{FALSE}
+
+
+// question: 15333  name: C2-4-02
+::C2-4-02::[html]<p>Poden crearse táboas dinámicas a partir de datos que estean en bases de datos externas.</p>{TRUE}
+
+
+// question: 15334  name: C2-4-06
+::C2-4-06::[html]<p>Ao deseñar unha táboa dinámica  pode estabelecerse como destino da mesma, unha folla nun documento diferente.</p>{FALSE}
+
+
+// question: 15335  name: C2-4-07
+::C2-4-07::[html]<p>Cando cambian os datos de orixe dunha táboa dinámica, ésta actualizase automaticamente.</p>{FALSE}
+
+
+// question: 15336  name: C2-4-08
+::C2-4-08::[html]<p>Para cambiar a disposición dos campos no deseño dunha táboa dinámica é necesario abrir o cadro de diálogo "Disposición de táboa dinámica".</p>{FALSE}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-5-trabajar-hipotesis
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-5-trabajar-hipotesis
+
+
+// question: 15342  name: C2-5-05
+::C2-5-05::[html]<p>A ferramienta <b>Busca de obxectivo</b> permite engadir restricións ou condicións limitantes na resolución do cálculo.</p>{FALSE}
+
+
+// question: 15343  name: C2-5-06
+::C2-5-06::[html]<p>A ferramienta <b>Resolvedor</b> permite engadir restriccións ou condicións limitantes na resolución do cálculo.</p>{TRUE}
+
+
+// question: 15344  name: C2-5-08
+::C2-5-08::[html]<p>Se nun intervalo de celas foron  creados tres escenarios, e ningún deles amosa o bordo, non se pode alternar a visualización entre eles.<br></p>{FALSE}
+
+
+// question: 15345  name: C2-5-09
+::C2-5-09::[html]<p>Os escenarios poden copiarse como unha folla nova dentro do documento.</p>{TRUE}
+
+
+// question: 15346  name: C2-5-10
+::C2-5-10::[html]<p>Para poder utilizar todos os algoritmos de cálculo do <b>Resolvedor</b> é necesario ter instalado correctamente o <b>JRE (Java Runtime Environment)</b>.</p>{TRUE}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-6-proteccion-documentos
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-6-proteccion-documentos
+
+
+// question: 15348  name: C2-6-02
+::C2-6-02::[html]<p>Para activar o agochamento de fórmulas hai que protexer a folla.</p>{TRUE}
+
+
+// question: 15349  name: C2-6-03
+::C2-6-03::[html]<p>Para activar o agochamento ao imprimir hai que protexer a folla.</p>{FALSE}
+
+
+// question: 15350  name: C2-6-04
+::C2-6-04::[html]<p>Ao activar a protección da folla, pódese estabelecer que non sexan seleccionables as celas desprotexidas.</p>{TRUE}
+
+
+// question: 15351  name: C2-6-05
+::C2-6-05::[html]<p>Para protexer a folla é imprescindible estabelecer un contrasinal.<br></p>{FALSE}
+
+
+// question: 15352  name: C2-6-06
+::C2-6-06::[html]<p>Ao protexer a folla, xa non se poderá copiar ou mover.</p>{FALSE}
+
+
+// question: 15353  name: C2-6-07
+::C2-6-07::[html]<p>Ao protexer o documento, as follas non se poderán copiar ou mover.</p>{TRUE}
+
+
+// question: 15354  name: C2-6-08
+::C2-6-08::[html]<p>Protexer o documento é o mesmo que protexer a folla de cálculo.</p>{TRUE}
+
+
+// question: 15355  name: C2-6-09
+::C2-6-09::[html]<p>¿Verdadero o falso?&nbsp; Proteger la hoja es lo mismo que proteger el documento.</p>{FALSE}
+
+
+// question: 15356  name: C2-6-10
+::C2-6-10::[html]<p>Ao gardar un documento con contrasinal, queda cifrado de tal xeito que é imposible acceder ao seu contido incluso con programas externos.</p>{TRUE}
+
+
+// question: 15357  name: C2-6-11
+::C2-6-11::[html]<p>Un documento aberto en modo de só lectura con contrasinal de modificación gárdase con outro nome. Ao pechar e volver abrir este último xa non terá contrasinal de modificación.</p>{TRUE}
+
+
+// question: 15358  name: C2-6-12
+::C2-6-12::[html]<p>Non se pode modificar unha folla de cálculo  asinada dixitalmente.</p>{FALSE}
+
+
+// question: 0  name: Switch category to $course$/top/C2-Calc-Avanzado/C2-7-personalizacion-interfaz
+$CATEGORY: $course$/top/C2-Calc-Avanzado/C2-7-personalizacion-interfaz
+
+
+// question: 15361  name: C2-7-01
+::C2-7-01::[html]<p>¿Verdadero o falso?&nbsp; Se puede añadir un submenú al personalizar una barra de herramientas.</p>{FALSE}
+
+
+// question: 15362  name: C2-7-02
+::C2-7-02::[html]<p>¿Verdadero o falso?&nbsp; Se puede añadir un submenú al personalizar un menú.</p>{TRUE}
+
+
+// question: 15363  name: C2-7-05
+::C2-7-05::[html]<p>¿Verdadero o falso?&nbsp; El texto asociado a un botón de la barra de herramientas <b>Estándar</b>&nbsp;no puede modificarse.</p>{FALSE}
+
+
+// question: 15364  name: C2-7-06
+::C2-7-06::[html]<p>¿Verdadero o falso? Se puede configurar una barra de herramientas para que muestre exclusivamente texto en vez de botones.</p>{TRUE}
+
+
+// question: 15365  name: C2-7-07
+::C2-7-07::[html]<p>¿Verdadero o falso?&nbsp; Se pueden añadir nuevos menús personales a la barra de menús.</p>{TRUE}
+
+
+// question: 15366  name: C2-7-08
+::C2-7-08::[html]<p>¿Verdadero o falso?&nbsp; Se pueden crear nuevos menús contextuales.</p>{FALSE}
+
+
+// question: 15367  name: C2-7-09
+::C2-7-09::[html]<p>¿Verdadero o falso?&nbsp; Desde <b>Calc</b> se pueden personalizar combinaciones de teclado tanto para todo el <b>LibreOffice</b> como exclusivamente para el propio <b>Calc</b>.</p>{TRUE}
+
+
+// question: 15368  name: C2-7-10
+::C2-7-10::[html]<p>¿Verdadero o falso?&nbsp; Se puede añadir más de un atajo de teclado para cualquier comando.</p>{TRUE}
+
+

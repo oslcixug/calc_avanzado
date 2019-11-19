@@ -1,0 +1,213 @@
+﻿WEBVTT
+
+00:00:00.000 --> 00:00:05.920
+En este vídeo vamos a mostrar como aplicar diferentes formatos de listas a los párrafos de un documento.
+
+00:00:05.920 --> 00:00:09.600
+En el documento de ejemplo hay el temario con los apartados de un curso.
+
+00:00:09.600 --> 00:00:16.720
+Se muestran en negrita los módulos principales.  Debajo de cada módulo hay diferentes apartados.
+
+00:00:16.880 --> 00:00:23.120
+A los apartados bajo el primer módulo les vamos a aplicar un formato de numeración.
+
+00:00:23.120 --> 00:00:25.280
+Seleccionamos los párrafos.
+
+00:00:25.360 --> 00:00:35.200
+En la barra de herramientas de <b>Formato</b> hacemos clic sobre el centro del botón <b>Alternar lista numerada</b>.
+
+00:00:35.600 --> 00:00:39.200
+Los párrafos han quedado numerados del 1 al 8.
+
+00:00:39.200 --> 00:00:49.120
+Si en vez de números preferimos letras, pulsamos otra vez sobre el botón, pero en esta ocasión sobre el desplegable.
+
+00:00:49.360 --> 00:00:53.840
+<b>Writer</b> nos muestra una galería de estilos de numeración.
+
+00:00:54.000 --> 00:01:00.320
+Seleccionamos Letra minúscula con paréntesis.
+
+00:01:00.560 --> 00:01:07.040
+Ahora, los párrafos han quedado numerados con letras desde a) hasta h).
+
+00:01:07.200 --> 00:01:12.640
+También se muestra una barra de herramientas de <b>Numeración y viñetas</b>.  
+
+00:01:12.640 --> 00:01:20.960
+Esta barra es contextual y sólo aparece cuando estamos sobre un párrafo con formato de lista.
+
+00:01:22.800 --> 00:01:33.440
+A los apartados bajo el segundo módulo les aplicaremos un formato de viñetas, esta vez desde el panel lateral de <b>Propiedades</b>.
+
+00:01:34.160 --> 00:01:39.280
+Seleccionamos los apartados bajo el segundo módulo.
+
+00:01:39.600 --> 00:01:45.760
+Abrimos el panel de <b>Propiedades</b> haciendo clic en el botón <b>Propiedades</b> de la barra lateral.
+
+00:01:46.160 --> 00:01:55.120
+Y en el panel de <b>Propiedades</b> hacemos clic en el centro del botón <b>Alternar lista con viñetas</b>.
+
+00:01:55.840 --> 00:02:04.560
+Si hacemos clic en el centro del botón, los párrafos se muestran con una viñeta sólida circular.
+
+00:02:04.720 --> 00:02:11.040
+Para cambiar el símbolo de la viñeta, volvemos a pulsar sobre el botón, pero en el desplegable.
+
+00:02:11.200 --> 00:02:18.080
+En la galería de viñetas que se muestra seleccionamos Viñetas sólidas en forma de rombo.
+
+00:02:18.400 --> 00:02:24.480
+Ahora los párrafos ya se muestran con una viñeta en forma de rombo.
+
+00:02:27.280 --> 00:02:36.800
+También podemos aplicar viñetas como imágenes en vez de símbolos, pero esto no lo podemos hacer desde las barras de herramientas, sino desde el diálogo <b>Numeración y viñetas</b>.
+
+00:02:37.040 --> 00:02:40.000
+Seleccionamos los párrafos bajo el tercer módulo.
+
+00:02:40.480 --> 00:02:49.600
+Pulsando con el botón secundario del ratón, desplegamos el menú contextual y seleccionamos <b>Numeración y viñetas</b>.
+
+00:02:50.800 --> 00:03:00.400
+Activamos la pestaña <b>Imagen</b> que nos muestra una amplia galería de viñetas de imagen.
+
+00:03:04.480 --> 00:03:12.880
+Seleccionamos una cualquiera y pulsamos el botón <b>Aceptar</b>.
+
+00:03:13.520 --> 00:03:19.520
+Ahora los párrafos se muestran con una viñeta de imagen.
+
+00:03:20.720 --> 00:03:25.520
+Ahora aplicaremos un sólo estilo de numeración a toda la lista.
+
+00:03:25.600 --> 00:03:31.840
+Seleccionamos todos los párrafos, incluidos los títulos de los módulos.
+
+00:03:33.040 --> 00:03:42.800
+Haciendo clic sobre el botón de Alternar lista numerada, se numeran todos los párrafos.
+
+00:03:44.160 --> 00:03:54.000
+No queremos que se numeren los títulos de los módulos, que son los párrafos en negrita, y eliminaremos la numeración de ellos.
+
+00:03:54.240 --> 00:04:02.160
+Seleccionamos el primer párrafo y luego pulsando la tecla <b>Ctrl</b> podemos seleccionar los otros dos.
+
+00:04:03.680 --> 00:04:09.280
+Ahora están seleccionados exclusivamente los títulos de cada módulo.
+
+00:04:09.360 --> 00:04:16.480
+Pulsamos sobre el botón <b>Alternar lista numerada</b> y desaparece la numeración de estos párrafos.
+
+00:04:16.720 --> 00:04:24.960
+Observad como la numeración se ha reorganizado automáticamente.
+
+00:04:26.240 --> 00:04:33.120
+En cualquier momento, para cualquier párrafo numerado podemos activar que reinicie la numeración. 
+
+00:04:33.360 --> 00:04:38.720
+Nos situamos en el punto 9, que es el primer apartado bajo el segundo módulo.
+
+00:04:38.960 --> 00:04:48.240
+Haciendo clic con el botón derecho del ratón, en el menú contextual seleccionamos <b>Reiniciar numeración</b>.
+
+00:04:48.240 --> 00:04:55.600
+Ahora los apartados del segundo módulo también están numerados del 1 al 4.
+
+00:04:55.680 --> 00:05:03.600
+Esto también lo podemos hacer desde el menú o la barra de herramientas de <b>Numeración y viñetas</b>.
+
+00:05:03.760 --> 00:05:09.120
+Nos situamos en el primer punto del último módulo, que ahora se muestra como punto 5.
+
+00:05:09.360 --> 00:05:23.520
+Abrimos el menú <b>Formato</b> y en la opciones del submenú <b>Listas</b>, seleccionamos <b>Reiniciar numeración</b>.
+
+00:05:24.560 --> 00:05:29.520
+Ahora ya vuelve a numerar desde el 1.
+
+00:05:30.480 --> 00:05:43.280
+Esto lo podríamos haber hecho también desde el botón <b>Reiniciar numeración</b> de la barra de herramientas <b>Numeración y viñetas</b>.
+
+00:05:45.760 --> 00:05:53.680
+De todas maneras, en un caso como el de este ejemplo, lo más habitual es que queramos aplicar un esquema numerado.  
+
+00:05:53.920 --> 00:05:57.440
+Vamos a seleccionar todos los párrafos.
+
+00:05:58.880 --> 00:06:08.960
+Desactivamos la numeración para todos, pulsando sobre el botón <b>Alternar lista numerada</b>.
+
+00:06:09.360 --> 00:06:17.920
+Y ahora desde el menú <b>Formato</b> abrimos el diálogo <b>Numeración y viñetas</b>.
+
+00:06:19.280 --> 00:06:26.240
+Activamos la pestaña <b>Esquema</b>.
+
+00:06:26.720 --> 00:06:37.840
+Y en la galería de posibles esquemas que nos ofrece, vamos a seleccionar el esquema numérico con todos los subniveles.
+
+00:06:38.400 --> 00:06:48.560
+Tras <b>Aceptar</b>, se muestran todos los párrafos con una simple numeración.  Nos falta disminuir el nivel de los siguientes apartados.
+
+00:06:48.800 --> 00:06:52.640
+Seleccionamos los apartados bajo el primer módulo
+
+00:06:53.120 --> 00:07:04.000
+Y, ahora, en el menú <b>Formato > Listas</b>, pulsamos <b>Descender un nivel</b>.
+
+00:07:04.800 --> 00:07:14.400
+Ahora los apartados del primer módulo se nos muestran numerados desde el 1.1 al 1.8.
+
+00:07:14.640 --> 00:07:20.160
+Seleccionamos los apartados bajo el segundo módulo.
+
+00:07:20.320 --> 00:07:30.240
+En la barra de herramientas <b>Numeración y viñetas</b>, hacemos clic sobre el botón <b>Descender un nivel</b>.
+
+00:07:30.640 --> 00:07:36.560
+Ahora los apartados se muestran desde el 2.1 al 2.4.
+
+00:07:36.560 --> 00:07:45.520
+Finalmente seleccionamos los subtemas del tercer módulo.
+
+00:07:45.920 --> 00:07:52.160
+Abrimos el menú contextual con una pulsación del botón secundario del ratón...
+
+00:07:52.240 --> 00:07:59.360
+Y también tenemos aquí disponible la opción de <b>Descender un nivel</b>.
+
+00:07:59.520 --> 00:08:07.120
+Ahora ya tenemos todo el curso en un formato de esquema numerado.
+
+00:08:07.600 --> 00:08:18.880
+Posiblemente no nos gusta el espaciado desproporcionado que ha quedado en los párrafos del segundo nivel entre la numeración y el texto correspondiente. Vamos a arreglarlo.
+
+00:08:19.040 --> 00:08:26.240
+No es preciso volver a seleccionar todos los párrafos del esquema.  Basta con estar situados en cualquier punto dentro de la lista.
+
+00:08:26.880 --> 00:08:32.640
+Desde el menú contextual abrimos el cuadro de diálogo <b>Numeración y viñetas</b>.
+
+00:08:32.720 --> 00:08:37.600
+Activamos la pestaña <b>Posición</b>.
+
+00:08:37.680 --> 00:08:43.920
+En Nivel, seleccionamos el Nivel 2, que es el que queremos corregir.
+
+00:08:43.920 --> 00:08:56.080
+Bajo <b>Posición y espaciado</b>, en el cuadro <b>Tabulación en</b>, escribimos 2,3 cm.
+
+00:08:56.240 --> 00:09:11.360
+También pondremos la misma medida en en el cuadro <b>Sangrar en</b>.  Esto sería útil para el caso de tener algún párrafo que ocupase más de una línea.
+
+00:09:11.760 --> 00:09:21.920
+Y ahora, tras pulsar <b>Aceptar</b>, ya se ha corregido el espaciado desproporcionado que había en los puntos del segundo nivel.
+
+00:09:22.080 --> 00:09:41.520
+Y hasta aquí hemos llegado. Hemos mostrado diferentes modos de trabajo con numeración, viñetas y esquemas numerados. Hay muchas más posibilidades en las pestañas <b>Posición</b> y <b>Personalizar</b> del cuadro de diálogo <b>Numeración y Viñetas</b>, pero esto lo dejamos a la exploración por parte de quienes estén más interesados. Gracias.
+
+00:09:41.520 --> 00:09:43.520

@@ -1,0 +1,153 @@
+﻿WEBVTT
+
+00:00:00.000 --> 00:00:06.200
+En este vídeo vamos a mostrar como aplicar diferentes formatos de párrafo al texto del documento.
+
+00:00:06.280 --> 00:00:11.800
+Disponemos de un documento, que en principio muestra un interlineado sencillo y no tiene espaciado de párrafo.
+
+00:00:11.920 --> 00:00:16.960
+En primer lugar, ampliaremos el espaciado e interlineado de todos los párrafos del documento.
+
+00:00:17.080 --> 00:00:29.640
+Seleccionamos todo el documento desde el menú <b>Editar</b>, escogiendo la opción <b>Seleccionar todo</b>.  También podríamos usar el atajo de teclado <b>Ctrl+E</b>.
+
+00:00:29.850 --> 00:00:36.600
+En la barra lateral, pulsamos el botón <b>Propiedades</b> para abrir el correspondiente panel.
+
+00:00:36.950 --> 00:00:55.800
+En el panel <b>Propiedades</b>, bajo el apartado <b>Párrafo</b>, disponemos de la sección <b>Espaciado</b>, donde en el cuadro <b>Espacio después del párrafo</b>, pulsamos sobre botón de incremento. 
+
+00:00:56.400 --> 00:01:08.450
+Cada vez que pulsamos el botón de incremento, el valor cambia 0,10 cm.  Pulsando dos veces, tendremos el resultado de  0,20 cm.
+
+00:01:08.560 --> 00:01:18.560
+El resultado es similar al que obtendríamos provocando un salto de párrafo vacío entre párrafo y párrafo.
+
+00:01:18.880 --> 00:01:26.880
+De esta manera, todo el documento muestra un mayor interlineado y espaciado entre párrafos mejorando su legibilidad.
+
+00:01:26.880 --> 00:01:31.680
+Vamos a cambiar la alineación del segundo párrafo.
+
+00:01:31.840 --> 00:01:38.400
+Como vamos a cambiar el formato a un solo párrafo no es preciso seleccionarlo; basta con situarnos en él.
+
+00:01:38.400 --> 00:01:54.320
+Desde el menú <b>Formato</b>, la opción <b>Alinear</b> nos da la posibilidad de seleccionar <b>Derecha</b>.  También podríamos haber utilizado directamente el atajo de teclado <b>Ctrl+R</b>.
+
+00:01:54.400 --> 00:02:01.600
+El párrafo ya se muestra alineado a la derecha.
+
+00:02:01.920 --> 00:02:10.000
+En el tercer párrafo vamos a aplicar una sangría derecha de 9 cm.
+
+00:02:10.080 --> 00:02:23.200
+Nos situamos en el párrafo y en el Panel lateral de <b>Propiedades</b>, en la sección <b>Sangría</b>, tenemos el cuadro <b>Sangría después del texto</b>.
+
+00:02:23.440 --> 00:02:36.000
+Pulsar el botón de incremento hasta llegar a 9 cm sería algo tedioso, así que seleccionamos el contenido y escribimos directamente el 9.
+
+00:02:36.160 --> 00:02:42.800
+Podemos comprobar el efecto de la sangría de 9 cm.
+
+00:02:43.120 --> 00:02:49.680
+Al penúltimo párrafo le aplicaremos alineación, bordes y relleno de fondo.
+
+00:02:49.840 --> 00:02:57.840
+No hay ningún botón en la barra de herramientas de <b>Formato</b> o el panel lateral de <b>Propiedades</b> que nos permita aplicar bordes, así que lo haremos desde el diálogo <b>Párrafo</b>.
+
+00:02:58.080 --> 00:03:04.800
+Cerramos el panel lateral de <b>Propiedades</b> pues no vamos a hacer uso de él.
+
+00:03:05.040 --> 00:03:08.960
+Situamos el punto de inserción dentro del párrafo.
+
+00:03:09.040 --> 00:03:17.840
+Y desde el menú contextual seleccionamos <b>Párrafo</b>.  También podríamos haberlo hecho desde el menú <b>Formato</b>.
+
+00:03:17.920 --> 00:03:22.480
+Seleccionamos la pestaña <b>Alineación</b>.
+
+00:03:22.720 --> 00:03:28.880
+Bajo <b>Opciones</b> activamos el botón de opción <b>Centro</b>.
+
+00:03:29.360 --> 00:03:34.080
+Ahora, activamos la pestaña Bordes.
+
+00:03:34.080 --> 00:03:39.040
+En <b>Preajustes</b> señalamos <b>Los cuatro bordes</b>.
+
+00:03:39.680 --> 00:03:44.880
+Activamos la pestaña <b>Área</b>.
+
+00:03:45.120 --> 00:03:50.240
+Aquí pulsamos el botón <b>Color</b>...
+
+00:03:50.320 --> 00:03:58.720
+...y en la paleta de colores seleccionamos el color deseado.  En este caso selecciono el amarillo.
+
+00:03:58.960 --> 00:04:15.440
+Tras <b>Aceptar</b>, todos los formatos se habrán aplicado a la vez.  Comprobemos que los bordes de párrafo y el color de fondo se han aplicado a todo el párrafo, desde la sangría izquierda hasta la sangría derecha.
+
+00:04:17.280 --> 00:04:24.080
+En el último párrafo vamos a aplicar todo un conjunto de formatos de párrafo.
+
+00:04:24.400 --> 00:04:27.440
+Nos situamos en el párrafo.
+
+00:04:27.440 --> 00:04:32.880
+Desde el menú contextual seleccionamos <b>Párrafo</b>.
+
+00:04:33.760 --> 00:04:43.680
+Se ha abierto el cuadro de diálogo <b>Párrafo</b>.  En el cuadro de diálogo seleccionamos la pestaña <b>Sangría y espaciado.</b>
+
+00:04:44.000 --> 00:04:49.840
+En sangría <b>Antes del texto</b> escribimos 3 cm.
+
+00:04:50.000 --> 00:04:55.600
+En sangría <b>Después del texto</b> escribimos 3 cm.
+
+00:04:55.840 --> 00:05:01.520
+En <b>Interlineado</b>, seleccionamos <b>Doble</b>.
+
+00:05:02.000 --> 00:05:07.120
+Ahora activamos la pestaña <b>Alineación</b>.
+
+00:05:07.120 --> 00:05:13.920
+Bajo Opciones activamos el botón de opción <b>Justificado</b>.
+
+00:05:14.240 --> 00:05:18.880
+Ahora seleccionamos la pestaña <b>Bordes</b>
+
+00:05:19.040 --> 00:05:24.400
+En el cuadro <b>Anchura</b> escribimos 2 puntos.
+
+00:05:25.200 --> 00:05:36.480
+Pulsando el botón <b>Color</b> escogemos el Rojo.
+
+00:05:39.280 --> 00:05:54.000
+Ahora en la vista previa bajo <b>Definido por el usuario</b> podemos activar los cuatro bordes.
+
+00:05:55.040 --> 00:06:14.960
+En <b>Espaciado al contenido</b> nos aseguramos de que esté activada la casilla  <b>Sincronizar</b> y vamos a cambiar el espaciado al contenido a 0,5 cm.
+
+00:06:15.120 --> 00:06:24.720
+Basta con que lo hagamos en uno de los lados y al estar sincronizados los cuatro lados,  se aplicará el cambio de espaciado en todos ellos.
+
+00:06:25.120 --> 00:06:36.960
+En <b>Estilo de sombra</b> vamos a seleccionar <b>Proyectar sombra a la parte inferior derecha</b>.
+
+00:06:37.600 --> 00:06:48.000
+Ya hemos definido los bordes.  Ahare, activamos la pestaña <b>Área</b>.
+
+00:06:48.480 --> 00:06:55.200
+Pulsamos el botón <b>Color</b> y en la paleta de colores escogemos el Cian.
+
+00:06:56.000 --> 00:07:03.520
+Ya podemos <b>Aceptar</b> y comprobar el resultado.
+
+00:07:03.600 --> 00:07:10.720
+Hemos mostrado los diferentes formatos de párrafo que Writer pone a nuestra disposición y las diferentes maneras de aplicarlos.
+
+00:07:10.720 --> 00:07:12.720

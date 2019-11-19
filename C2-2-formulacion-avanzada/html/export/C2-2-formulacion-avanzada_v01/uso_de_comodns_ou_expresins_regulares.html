@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="gl">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Uso de comodíns ou expresións regulares | Formulación avanzada en Calc </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Rafael Rodríguez Gayoso (gl) - Ismael Fanlo y Salvador Doménech" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-58"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegación</a></p>
+<header id="header" ><div id="headerContent">Formulación avanzada en Calc</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Formulación avanzada</a></li>
+   <li><a href="uso_do_asistente_de_funcins.html" class="no-ch">Uso do Asistente de funcións</a></li>
+   <li><a href="uso_de_nomes_en_frmulas_e_funcins.html" class="no-ch">Uso de nomes en fórmulas e funcións</a></li>
+   <li><a href="uso_de_expresins_lxicas.html" class="no-ch">Uso de expresións lóxicas</a></li>
+   <li><a href="aniado_de_funcins.html" class="no-ch">Aniñado de funcións</a></li>
+   <li id="active"><a href="uso_de_comodns_ou_expresins_regulares.html" class="active no-ch">Uso de comodíns ou expresións regulares</a></li>
+   <li><a href="funcins_de_contar_e_sumar.html" class="no-ch">Funcións de contar e sumar</a></li>
+   <li><a href="funcins_de_texto.html" class="no-ch">Funcións de texto</a></li>
+   <li><a href="funcins_de_data_e_hora.html" class="no-ch">Funcións de data e hora</a></li>
+   <li><a href="funcins_lxicas.html" class="no-ch">Funcións lóxicas</a></li>
+   <li><a href="funcins_de_folla_de_clculo.html" class="no-ch">Funcións de folla de cálculo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="aniado_de_funcins.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funcins_de_contar_e_sumar.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Uso de comodíns ou expresións regulares</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id84">
+<div class="iDevice emphasis0">
+<div id="ta84_85" class="block iDevice_content">
+<p>As expresións<strong> regulares</strong> son patróns avanzados de busca que se usan habitualmente nos diálogos de <strong>Atopar e Substituír</strong>. </p>
+<p>Os <strong>comodíns</strong>, máis sinxelos de utilizar, só están dispoñibles nas versións máis recentes de <strong>LibreOffice</strong>.</p>
+<p>Tanto comodíns como expresións regulares poden ser utilizados nas fórmulas, pero hai que decidirse por unha das dúas posibilidades. Para isto, dende o menú <em><strong>Ferramentas &gt; Opcións &gt; Calc do LibreOffice  &gt; Calcular</strong></em> atoparemos tres botóns de opción que nos permiten seleccionar entre:</p>
+<ul>
+<li>Permitir comodíns nas fórmulas.</li>
+<li>Permitir expresións regulares nas fórmulas.</li>
+<li>Ningún comodín nen expresión regular.</li>
+</ul>
+<p>Por defecto, nas versiones máis recentes de Calc están activados por defecto os comodíns.</p>
+<p>Na seguinte táboa amósase a equivalencia entre ambas opcións á hora de utilizalas.</p>
+<table style="width: 800px; border: 1px; border-spacing: 0px; margin: auto;" border="1px ">
+<thead>
+<tr style="height: 15px;">
+<th style="border: 1px solid #cccccc; height: 15px; width: 150px; background-color: #eeeeee; text-align: left; vertical-align: top;"><strong>Para atopar ...</strong></th>
+<th style="border: 1px solid #cccccc; height: 15px; width: 150px; background-color: #eeeeee; text-align: left; vertical-align: top;"><strong>Comodíns</strong></th>
+<th style="border: 1px solid #cccccc; height: 15px; width: 150px; background-color: #eeeeee; text-align: left; vertical-align: top;">Expresións regulares</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 17.7656px; border-color: #cccccc;">
+<td style="width: 180px; height: 17.7656px;">Un carácter e necesariamente un</td>
+<td style="width: 150px; height: 17.7656px;"><span style="font-family: 'courier new', courier;"><strong>?</strong></span> (interrogante de peche)</td>
+<td style="width: 150px; height: 17.7656px;"><strong><span style="font-family: 'courier new', courier;">.</span></strong> (punto)</td>
+</tr>
+<tr style="height: 17.7656px; border-color: #cccccc;">
+<td style="width: 180px; height: 17px;">Calquera conxunto de caracteres ou ningún</td>
+<td style="width: 150px; height: 17px;"><span style="font-family: 'courier new', courier;"><strong>*</strong></span> (asterisco)</td>
+<td style="width: 150px; height: 17px;"><strong><span style="font-family: 'courier new', courier;">.*</span></strong> (punto seguido dun asterisco)</td>
+</tr>
+</tbody>
+</table>
+<p>E unha pequena mostra de exemplos:</p>
+<table style="border: 1px #cccccc; border-spacing: 0px; margin: auto; width: 800px;" cellspacing="0" border="1px ">
+<thead>
+<tr style="height: 15px;">
+<th style="border: 1px solid #cccccc; height: 15px; width: 500px; background-color: #eeeeee; text-align: left; vertical-align: top;">Para atopar ...</th>
+<th style="border: 1px solid #cccccc; height: 15px; width: 85px; background-color: #eeeeee; text-align: left; vertical-align: top;">Comodíns</th>
+<th style="border: 1px solid #cccccc; height: 15px; width: 85px; background-color: #eeeeee; text-align: left; vertical-align: top;">Expresións regulares</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 17px;">
+<td style="width: 500px; height: 17px;"><strong>Pepe</strong><span> o </span><strong>Pepa</strong><span>, pero non </span><strong>Pep</strong><span> nen </span><strong>Pepiño</strong><span> (catro caracteres que comezan por </span><strong>pep</strong><span>).</span></td>
+<td style="text-align: center; height: 17px;"><span style="font-family: 'courier new', courier;"><strong>pep??</strong></span></td>
+<td style="text-align: center; height: 17px;"><span style="font-family: 'courier new', courier;"><strong>pep..</strong></span></td>
+</tr>
+<tr style="height: 17px;">
+<td style="width: 500px; height: 17px;"><strong>Pep</strong><span>, </span><strong>Pepe</strong><span>, </span><strong>Pepa</strong><span> ou </span><strong>Pepiño</strong><span> indistintamente (calquera termo </span><span>que comeza</span><span> por </span><strong>pep</strong><span>)</span></td>
+<td style="text-align: center; height: 17px;"><span style="font-family: 'courier new', courier;"><strong>pep*</strong></span></td>
+<td style="text-align: center; height: 17px;"><span style="font-family: 'courier new', courier;"><strong>pep.*</strong></span></td>
+</tr>
+<tr style="height: 17.9844px;">
+<td style="width: 500px; height: 17.9844px;"><strong>Pep</strong><span> o </span><strong>Josep</strong><span>, pero no </span><strong>Pepe</strong><span>, </span><strong>Pepa</strong><span> o </span><strong>Pepiño</strong><span> (cualquera trrmo </span><span>que finaliza</span><span> por </span>pep)</td>
+<td style="text-align: center; height: 17.9844px;"><span style="font-family: 'courier new', courier;"><strong>*pep</strong></span></td>
+<td style="text-align: center; height: 17.9844px;"><span style="font-family: 'courier new', courier;"><strong>.*pep</strong></span></td>
+</tr>
+<tr style="height: 30px; border-color: #cccccc;">
+<td style="width: 500px; height: 30px; border: 1px solid #cccccc; border-color: #cccccc;"><strong>Pep</strong><span>, </span><strong>Josep</strong><span>, </span><strong>Pepe</strong><span>, </span><strong>Pepa</strong><span>, </span><strong>Pepiño</strong><span> o </span><strong>Impepinable</strong><span> (calquera termo </span><span>que contén </span><strong>pep</strong><span>, que inclúe aos que comezan e rematan por </span><strong>pep</strong><span>)</span></td>
+<td style="text-align: center; height: 30px;"><span style="font-family: 'courier new', courier;"><strong>*pep*</strong></span></td>
+<td style="text-align: center; height: 30px;"><span style="font-family: 'courier new', courier;"><strong>.*pep.*</strong></span></td>
+</tr>
+</tbody>
+</table>
+<p>Aínda que a potencia das expresións regulares pode ir moito máis alá destes simples exemplos, para a maioría de casos nos que sexa necesario utilizar patróns de busca, será suficiente con usar comodíns.  Por iso recomendamos mantelos activados, tal e como veñen por defecto.</p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Licenciado baixo a</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licenza Creative Commons Recoñecemento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="aniado_de_funcins.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="funcins_de_contar_e_sumar.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="gl">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Aniñado de funcións | Formulación avanzada en Calc </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Rafael Rodríguez Gayoso (gl) - Ismael Fanlo y Salvador Doménech" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-46"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegación</a></p>
+<header id="header" ><div id="headerContent">Formulación avanzada en Calc</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Formulación avanzada</a></li>
+   <li><a href="uso_do_asistente_de_funcins.html" class="no-ch">Uso do Asistente de funcións</a></li>
+   <li><a href="uso_de_nomes_en_frmulas_e_funcins.html" class="no-ch">Uso de nomes en fórmulas e funcións</a></li>
+   <li><a href="uso_de_expresins_lxicas.html" class="no-ch">Uso de expresións lóxicas</a></li>
+   <li id="active"><a href="aniado_de_funcins.html" class="active no-ch">Aniñado de funcións</a></li>
+   <li><a href="uso_de_comodns_ou_expresins_regulares.html" class="no-ch">Uso de comodíns ou expresións regulares</a></li>
+   <li><a href="funcins_de_contar_e_sumar.html" class="no-ch">Funcións de contar e sumar</a></li>
+   <li><a href="funcins_de_texto.html" class="no-ch">Funcións de texto</a></li>
+   <li><a href="funcins_de_data_e_hora.html" class="no-ch">Funcións de data e hora</a></li>
+   <li><a href="funcins_lxicas.html" class="no-ch">Funcións lóxicas</a></li>
+   <li><a href="funcins_de_folla_de_clculo.html" class="no-ch">Funcións de folla de cálculo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="uso_de_expresins_lxicas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="uso_de_comodns_ou_expresins_regulares.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Aniñado de funcións</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id111">
+<div class="iDevice emphasis0">
+<div id="ta111_1" class="block iDevice_content">
+<p>Como xa sabemos, a maioría das funcións de <strong>Calc</strong> precisan argumentos.</p>
+<p>Estes poden ser valores constantes (un número, unha data, un texto...) ou tamén referencias a unha cela ou un intervalo (<span style="font-family: courier new,courier;"><strong>B2</strong></span>, <span style="font-family: courier new,courier;"><strong>J4:L18</strong></span>) que poden ser relativas, absolutas ou mixtas, ou incluso unha cela ou intervalo con nome.</p>
+<p>Pero en ocasións, un ou máis argumentos deberán ser calculados utilizando a mesma ou outra función.</p>
+<p>Como se de unhas <span class="st">matrioshka​​</span>s (bonecas rusas) se tratase, atoparemos funcións que conteñen no seu interior como un argumento a outra función (á que chamamos función aniñada).</p>
+<p><img src="esquema_funcion_anidada.png" alt="Esquema de funcion anidada" title="Esquema de funcion anidada" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>No esquema amosado (algo abstracto, pero que concreta a idea), a <strong>FUNCION2</strong>, á que se lle pasan dous argumentos, debe pasar o seu resultado como segundo argumento da <strong>FUNCION1</strong>. O  cadro inferior do esquema amosa como haberá que formular o cálculo para que se comporte como se desexa, substituíndo o segundo argumento <strong>ARG_1B</strong> pola <strong>FUNCION2</strong>.</p>
+<p>A función aniñada será resolta por <strong>Calc</strong> en primeira instancia, devolvendo o seu resultado á función que a aniña e que utilizará este valor como argumento.</p>
+<p>Ao longo dos seguintes apartados veremos diferentes casos con funcións aniñadas; para comezar, aí van uns exemplos...</p>
+<p><img src="C2-2-formulacion-avanzada-24.png" alt="Ejemplos de funciones anidadas" title="Ejemplos de funciones anidadas" style="display: block; margin-left: auto; margin-right: auto;" width="875" height="193" /></p>
+<p> </p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id81">
+<div class="iDevice emphasis0">
+<div id="ta81_85" class="block iDevice_content">
+<h2>Indicar beneficios, resultado nulo ou perdas</h2>
+<p>Supoñamos que dados uns resultados económicos, desexamos que nunha cela se amose un texto indicando se se obtiveron beneficios, perdas ou un resultado nulo.</p>
+<ul>
+<li>Se o resultado é un valor maior que cero, deberá poñer BENEFICIOS</li>
+<li>Se o resultado é un valor menor que cero, deberá poñer PERDAS</li>
+<li>Se o resultado é cero, deberá poñer RESULTADO NULO</li>
+</ul>
+<p>O resultado é un valor numérico que se atopa na cela C3 da nosa folla. O texto queremos amosalo na cela B6.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-25.png" alt="Planteamiento de nuestro ejemplo" title="Planteamiento de nuestro ejemplo" width="492" height="222" /></p>
+<p>Para resolver este exemplo precisaremos do uso da función <strong>SE()</strong>.</p>
+<p>Seguiremos os seguintes pasos:</p>
+<ul>
+<li>Faremos clic na cela <strong><span style="font-family: courier new,courier;">B6</span></strong>.</li>
+<li>Abrimos ao asistente de funcións.</li>
+<li>Seleccionaremos a función <strong>SE()</strong> e faremos clic no botón <strong>Seguinte &gt;</strong>.</li>
+</ul>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-26.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="776" height="634" /></p>
+<p></p>
+<ul>
+<li>Faremos clic no primeiro argumento, <em>Proba</em>, e faremos clic sobre a cela <span style="font-family: courier new,courier;"><strong>C3</strong> </span>para inserir a súa referencia; e despois escribimos <strong> &gt;0</strong>.</li>
+<li>Faremos clic no segundo argumento, <em>Valor «entón»</em>, e escribiremos <strong>"BENEFICIO"</strong>.</li>
+</ul>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-27.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="776" height="634" /></p>
+<ul>
+<li>Faremos clic no terceiro argumento, <em>Valor «se falso»</em>; agora necesitamos inserir unha nova función SE() aniñada como terceiro argumento na función anterior, para o que faremos clic sobre o botón <img src="C2-2-formulacion-avanzada-001.png" alt="Botón Insertar función" title="Botón Insertar función" style="vertical-align: middle;" width="31" height="31" /> inserir función.</li>
+<li>De novo executamos os pasos necesarios para seleccionar a función <strong>SE()</strong> e faremos clic no botón <strong>Seguinte &gt;</strong>.</li>
+<li>Faremos clic no primeiro argumento, <em>Proba</em> e faremos clic sobre a cela <span style="font-family: courier new,courier;"><strong>C3</strong> </span>para inserir a referencia; e despois teclearemos<strong> &lt;0</strong>.</li>
+<li>Faremos clic no segundo argumento, <em>Valor «Entón»</em>, e escribiremos <strong>"PERDA"</strong>.</li>
+<li>Faremos clic no terceiro argumento, <em>Valor «se falso»</em>, e escribiremos <strong>"RESULTADO NULO"</strong>.</li>
+</ul>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-28.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="776" height="634" /></p>
+<ul>
+<li>Faremos clic sobre o botón <strong>Aceptar</strong>.</li>
+</ul>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id82">
+<div class="iDevice emphasis0">
+<div id="ta82_85" class="block iDevice_content">
+<h2>Está en prazo ou venceu</h2>
+<p>Dispoñemos dunha lista de datos cuns documentos e a súa data de entrada.</p>
+<p>Dispoñemos nas celas <strong><span style="font-family: courier new,courier;">D1:D3</span></strong> duns valores numéricos que definen o ano, mes e día límite para considerar se estes documentos chegaron dentro do prazo, ou xa estaba vencido.</p>
+<p>Necesitamos unha función <strong>SE()</strong> para que compare a data do documento coa data límite, e escriba na cela desa fila "ESTÁ EN PRAZO" se a data do documento é menor, ou "VENCEU O PRAZO" en caso contrario.</p>
+<p>Como este documento vai ser enviado a un compañeiro inglés, debemos asegurarnos de que a comparación de datas se faga correctamente, polo que debemos aniñar a función<strong> DATA()</strong> dentro da función <strong>SE()</strong>.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-29.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="739" height="375" /></p>
+<p>Seguiremos os seguintes pasos:</p>
+<ul>
+<li>Facemos clic na cela <strong><span style="font-family: courier new,courier;">D7</span></strong>.</li>
+<li>Abrimos o asistente de funcións.</li>
+<li>Seleccionaremos a función <strong>SE()</strong> e faremos clic no botón <strong>Seguinte &gt;</strong>.</li>
+</ul>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-30.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="776" height="634" /></p>
+<p></p>
+<ul>
+<li>Faremos clic no segundo argumento, <em>Valor «Entón»</em>, e escribiremos <strong>"ESTÁ EN PRAZO"</strong>.</li>
+<li>Faremos clic no terceiro argumento, <em>Valor «se falso»</em>, e escribiremos <strong>"VENCEU O PRAZO"</strong>.</li>
+</ul>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-31.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="776" height="634" /></p>
+<ul>
+<li>Faremos clic no primeiro argumento, <em>Proba</em>; agora necesitamos inserir a función<strong> DATA()</strong> aniñada como primeiro argumento na función anterior, para o que faremos clic sobre o botón <img src="C2-2-formulacion-avanzada-001.png" alt="Botón Insertar función" title="Botón Insertar función" style="vertical-align: middle;" width="31" height="31" />.</li>
+<li>Executamos os pasos necesarios para seleccionar a función <strong>DATA()</strong> e faremos clic no botón <strong>Seguinte &gt;</strong>.</li>
+<li>Faremos clic no primeiro argumento, ano, e faremos clic sobre a cela <span style="font-family: courier new,courier;"><strong>D1</strong> </span>para inserir a súa referencia.</li>
+<li>Faremos clic no segundo argumento, mes, e faremos clic sobre a cela <span style="font-family: courier new,courier;"><strong>D2</strong> </span>para inserir a súa referencia.</li>
+<li>Faremos clic no terceiro argumento, día, e faremos clic sobre a cela <span style="font-family: courier new,courier;"><strong>D3</strong> </span>para inserir a súa referencia.</li>
+</ul>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-32.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="776" height="634" /></p>
+<ul>
+<li>Agora necesitamos volver á función <strong>SE()</strong> que contén a esta función <strong>DATA()</strong>; faremos clic no botón <strong>&lt; Anterior</strong> as veces necesarias para volver á edición desta función, ou ben, faremos clic sobre calquera parte da función <strong>SE</strong> no cadro <strong>Fórmula</strong>.</li>
+</ul>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-33.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="776" height="634" /></p>
+<ul>
+<li>Faremos clic no primeiro argumento, <em>Proba</em>, xusto diante da función DATA(); e faremos clic sobre a cela <span style="font-family: courier new,courier;"><strong>B7</strong> </span>para inserir a súa referencia; despois teclearemos<strong> &lt;</strong>.</li>
+</ul>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-34.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="776" height="634" /></p>
+<ul>
+<li>Para remata, facemos clic sobre o botón <strong>Aceptar</strong>.</li>
+</ul>
+<p>Na cela D7 acabamos de inserir a fórmula =SE(B7&lt;DATA(D1;D2;D3);"ESTÁ EN PRAZO";"VENCE U O PRAZO")</p>
+<p>Cando estendamos a fórmula ás celas situadas máis abaixo, as referencias relativas cambiarán; como o desprazamento é cara abaixo, cambian os números de filas, pero é un efecto que non desexamos agás para a referencia B7; as outras referencias deben ser fixadas como referencias absolutas.</p>
+<p>Polo tanto, faremos clic sobre a cela D7 e na barra de fórmulas editaremos a expresión, facendo que as referencias ás celas D1, D2 e D3 sexan absolutas.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-35.png" alt="Ejemplo de funciones anidadas" title="Ejemplo de funciones anidadas" width="640" height="34" /></p>
+<p>A continuación, estenderemos a fórmula ao resto de celas.</p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Licenciado baixo a</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licenza Creative Commons Recoñecemento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="uso_de_expresins_lxicas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="uso_de_comodns_ou_expresins_regulares.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

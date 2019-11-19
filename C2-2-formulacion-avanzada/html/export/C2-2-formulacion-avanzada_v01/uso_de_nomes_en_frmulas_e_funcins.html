@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="gl">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Uso de nomes en fórmulas e funcións | Formulación avanzada en Calc </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Rafael Rodríguez Gayoso (gl) - Ismael Fanlo y Salvador Doménech" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-45"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegación</a></p>
+<header id="header" ><div id="headerContent">Formulación avanzada en Calc</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Formulación avanzada</a></li>
+   <li><a href="uso_do_asistente_de_funcins.html" class="no-ch">Uso do Asistente de funcións</a></li>
+   <li id="active"><a href="uso_de_nomes_en_frmulas_e_funcins.html" class="active no-ch">Uso de nomes en fórmulas e funcións</a></li>
+   <li><a href="uso_de_expresins_lxicas.html" class="no-ch">Uso de expresións lóxicas</a></li>
+   <li><a href="aniado_de_funcins.html" class="no-ch">Aniñado de funcións</a></li>
+   <li><a href="uso_de_comodns_ou_expresins_regulares.html" class="no-ch">Uso de comodíns ou expresións regulares</a></li>
+   <li><a href="funcins_de_contar_e_sumar.html" class="no-ch">Funcións de contar e sumar</a></li>
+   <li><a href="funcins_de_texto.html" class="no-ch">Funcións de texto</a></li>
+   <li><a href="funcins_de_data_e_hora.html" class="no-ch">Funcións de data e hora</a></li>
+   <li><a href="funcins_lxicas.html" class="no-ch">Funcións lóxicas</a></li>
+   <li><a href="funcins_de_folla_de_clculo.html" class="no-ch">Funcións de folla de cálculo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="uso_do_asistente_de_funcins.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="uso_de_expresins_lxicas.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Uso de nomes en fórmulas e funcións</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id109">
+<div class="iDevice emphasis0">
+<div id="ta109_1" class="block iDevice_content">
+<p>Cando queremos facer un cálculo con valores almacenados en celas, utilizamos unha fórmula con referencias (relativas, mixtas ou absolutas) ás celas, mediante a súa notación de columna e fila: <strong>A1</strong>, por exemplo.</p>
+<p>Existe outro método para facer referencia a unha cela ou a un intervalo de celas. Consiste en aplicar un <strong>nome</strong> a unha cela ou a un intervalo de celas.</p>
+<p>A partir dese momento, poderemos facer referencia a esa cela ou intervalo ben coa súa notación de fila e columna (o que viñamos utilizando ata agora, por exemplo <strong>B5</strong> ou <strong>H3:J14</strong>) e tamén, polo <strong>nome</strong> que acabamos de crear.</p>
+<p>O uso de celas ou intervalos co nome ten varias vantaxes:</p>
+<ul>
+<li>Poden usarse como <strong>puntos ou marcadores</strong> a lugares específicos en follas de cálculo grandes. Basta con despregar o cadro de nomes (á esquerda da barra de fórmulas) e seleccionar o nome desexado para desprazar a cela activa a esa cela ou intervalo, incluso aínda que estemos traballando noutra folla dentro do documento.</li>
+<li>Melloran la <strong>lexibilidade</strong> das fórmulas. Comparemos por exemplo unha expresión como <strong>=SUMA(Hoja3.G5:G13)*MEDIA(Hoja2.A20:A25)</strong> con esta uotra: <strong>=SUMA(VENTAS)*INFLACION_PREVISTA</strong>.</li>
+<li>Unha cela con nome é unha <strong>referencia fixa ou absoluta</strong>, mentres que un intervalo con nome é unha <strong>referencia mixta</strong>, polo que a utilizalo nunha fórmula, non deberemos preocuparnos por engadir notacións co símbolo do dólar ($columna$fila).</li>
+</ul>
+<h2>Crear un nome asignado a unha cela ou a un intervalo de celas</h2>
+<p>Para crear un nome, seleccionaremos a cela ou intervalo de celas ás que desexamos asignar un nome, pulsaremos no cuadro de nomes (á esquierda da barra de fórmulas) e escribiremos o nome.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-10.png" alt="Creando un nombre para un rango de celdas" title="Creando un nombre para un rango de celdas" style="display: block; margin-left: auto; margin-right: auto;" width="571" height="328" /><em>Creando un nome para un intervalo de celas</em></p>
+<p>É moi importante finalizar a denominación pulsando a tecla <span class="keyboard"><strong>Intro</strong></span>. Doutro xeito non funcionará.  </p>
+<p>Podemos verificar se o nome foi creado correctamente despregando o cadro de nomes que amosará todos os nombres creados. Seleccionando algún deles, activarase a cela ou intervalo correspondente.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-11.png" alt="Cuadro de nombres desplegado" title="Cuadro de nombres desplegado" style="display: block; margin-left: auto; margin-right: auto;" width="577" height="261" /><em>Cadro de nomes despregado</em></p>
+<p>Por outra banda, se seleccionamos unha cela ou un intervalo de celas con nome, en lugar de amosar a habitual referencia de columna e fila, o cadro de nomes amosará o nome definido para esa selección.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-12.png" alt="Selección de un rango nombrado" title="Selección de un rango nombrado" style="display: block; margin-left: auto; margin-right: auto;" width="581" height="260" /><em>Selección dun intervalo nomeado</em></p>
+<h3>Definir</h3>
+<p>Un método alternativo para asignar un nome a unha cela o intervalo de celas, é dende o menú <em><strong>Folla &gt; Intervalos e expresións con nome &gt; Definir</strong></em>, que amosará o cadro de diálogo <strong>Definir nome</strong>.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-13.png" alt="Diálogo Definir nombre" title="Diálogo Definir nombre" style="display: block; margin-left: auto; margin-right: auto;" width="642" height="353" /><em>Cadro de diálogo <strong>Definir nome</strong></em></p>
+<ul>
+<li>No cadro de texto <strong>Nome</strong> escribe a denominación escollido para a cela ou intervalo.</li>
+<li>En <strong>Intervalo</strong> aparecerá a referencia á selección de celas; se non se fixo a selección correcta á que desexas asignar o nome, pódese modificar dende aqui.</li>
+<li>Por defecto, os nombres creanse con <strong>Ámbito</strong><strong> Documento (Global)</strong>, o que fará que o nome estea dispoñible para todo o documento. O despregable <strong>Ámbito</strong> permite crear o nome no ámbito dunha folla determinada, o que o converte en invisible ao resto de folla.  Isto  permitirá definir un mesmo nome de cela ou intervalo en follas diferentes.</li>
+<li>A sección expansible <strong>Opcións do intervalo</strong> permite asignar diferentes funcionalidades ao intervalo que se está a crear.<span style="font-size: 0.8em;"></span></li>
+</ul>
+<div class="destacado">
+<p><strong><img src="icon_advertencia.gif" alt="Advertencia" title="Advertencia" width="30" height="30" /> Advertencia.<br />Regras sobre nombres</strong></p>
+<ul>
+<li><strong>Caracteres válidos</strong>: O primeiro carácter dun nome debe ser unha letra ou un carácter de subliñado (_). O resto dos caracteres dol nome poden ser letras, números, puntos e caracteres de subliñado. Podemos utilizar como nome un só carácter, usando as letras a-z ou A-Z, agás as letras C c R r por compatibilidade con outras follas de cálculo. Non se permiten referencias a celas: Os nomes non poden ser idénticos a unha referencia de cela, como B15 ou B$15 ou B5:C8.</li>
+<li><strong>Non se admiten espazos</strong>: Os espazos non están permitidos como parte dun nome. Usa o carácter de subliñado (_) e o punto (.) como separadores de palabra, por exemplo<em> Imposto_Tipo_1</em> ou <em>Imposto.Tipo.1</em>, ou utiliza combinacións de maiúsculas e minúsculas, como <em>ImpostoTipo1</em>.</li>
+</ul>
+</div>
+<h2>Crear nomes dende a selección</h2>
+<p>Temos unha posibilidade de crear varios nomes á vez, seleccionando unha táboa de datos e tomando como nome as etiquetas da primeira fila ou da primeira columna.</p>
+<p>Despois de realizar a selección, activaremos dende o menú <em><strong>Intervalos e expresións con nome &gt; Crear...</strong> </em>e amosará o cadro de diálogo <strong>Crear nomes</strong>.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-14.png" alt="Crear nombres desde selección" title="Crear nombres desde selección" style="display: block; margin-left: auto; margin-right: auto;" width="1073" height="485" /><em>Crear nomes dende selección</em></p>
+<p>Dado que no exemplo desexamos crear nomes coas cabeceiras do intervalo de celas seleccionadas, marcamos as opcións <strong>Fila superior</strong> e <strong>Columna esquerda</strong>.</p>
+<p>Só con este paso, no exemplo amosado foron creados os seguintes nomes:</p>
+<p><img src="C2-2-formulacion-avanzada-18.png" alt="Nombres creados desde la selección" title="Nombres creados desde la selección" style="display: block; margin-left: auto; margin-right: auto;" width="353" height="209" /></p>
+<h2>Usar un nome dentro dunha fórmula</h2>
+<p>Para usar dentro dunha fórmula un nome que xa creamos, podemos escribilo directamente dentro da fórmula.  </p>
+<p>Cando nunha fórmula comezamos a escribir un nome, unha etiqueta emerxente amósanos como pista para autocompletalo pulsando <span class="keyboard"><strong>Intro</strong></span>.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-16.png" alt="Nombre para autocompletar al escribir fórmula" title="Nombre para autocompletar al escribir fórmula" style="display: block; margin-left: auto; margin-right: auto;" width="734" height="210" /><em>Nome para autocompletar ao escribir a fórmula</em></p>
+<p>Se non queremos escribir o nome, mentres editamos a fórmula podemos acceder ao menú <em><strong>Inserir &gt; Intervalo ou expresión con nome....</strong></em>, dende donde se amosará o cadro de diálogo <strong>Pegar os nomes</strong>; facendo clic no botón <strong>Pegar</strong>, o nome quedará inserido na fórmula.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-17.png" alt="Insertar nombre en una fórmula" title="Insertar nombre en una fórmula" style="display: block; margin-left: auto; margin-right: auto;" width="1062" height="470" /><em>Inserir nome nunha fórmula</em></p>
+<p>Se non estamos editando unha fórmula, mediante o botón <strong>Pegar todo</strong> deste mesmo cadro de diálogo, <strong>Calc</strong> inserirá na folla unha  lista cos nomes definidos e as celas ou intervalos de celas correspondentes.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-18.png" alt="Listado de nombres creados" title="Listado de nombres creados" style="display: block; margin-left: auto; margin-right: auto;" width="353" height="209" /><em>Listado de nomes creados</em></p>
+<h2>O operador ! de intersección</h2>
+<p>Cando estamos a traballar con intervalos nomeados, unha alternativa ás referencias por columna e fila (A5, J10, etc) que podemos utilizar dentro das nosas fórmulas é utilizar os nomes co operador de intersección <strong>!</strong>.</p>
+<p>Téndoo presente, será perfectamente válido escribir unha fórmula como</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier;"><strong>=Febreiro!Lugo+Marzo!Ourense</strong></span></p>
+<h2>Modificar ou eliminar un nome asignado a unha cela ou intervalo</h2>
+<p>Para modificar ou eliminar un nome, dende o menú <em><strong>Folla &gt; Intervalos e expresións con nome &gt; Xestionar</strong></em> (ou pulsando <strong><span class="keyboard">Ctrl</span> + <span class="keyboard">F3</span></strong>) amosarase o cadro de diálogo <strong>Xestionar nomes</strong> que che permitirá editar os nomes, modificar os intervalos aos que se refiren, ou eliminalos.</p>
+<p style="text-align: center;"><img src="C2-2-formulacion-avanzada-19.png" alt="Diálogo gestionar nombres" title="Diálogo gestionar nombres" style="display: block; margin-left: auto; margin-right: auto;" width="618" height="612" /><em>Cadro de diálogo <strong>Xestionar nomes</strong></em></p>
+<p>Pulsando o botón <strong>Engadir</strong> tamén se abrirá o cadro de diálogo <strong>Definir nome</strong> visto anteriormente.</p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id99">
+<div class="iDevice emphasis0">
+<div id="ta99_1" class="block iDevice_content">
+<figure class="exe-figure exe-media position-center" style="width: 800px;"><iframe width="800" height="450" src="//www.youtube.com/embed/qvkeFBB4B7g" allowfullscreen="allowfullscreen"></iframe>
+<figcaption class="figcaption"><span class="title"><em>Vídeo: Creación y uso de nombres de rangos</em></span></figcaption>
+</figure>
+<p> </p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Licenciado baixo a</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licenza Creative Commons Recoñecemento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="uso_do_asistente_de_funcins.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="uso_de_expresins_lxicas.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

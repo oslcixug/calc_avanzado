@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="gl">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Uso de expresións lóxicas | Formulación avanzada en Calc </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Rafael Rodríguez Gayoso (gl) - Ismael Fanlo y Salvador Doménech" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-59"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar navegación</a></p>
+<header id="header" ><div id="headerContent">Formulación avanzada en Calc</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Formulación avanzada</a></li>
+   <li><a href="uso_do_asistente_de_funcins.html" class="no-ch">Uso do Asistente de funcións</a></li>
+   <li><a href="uso_de_nomes_en_frmulas_e_funcins.html" class="no-ch">Uso de nomes en fórmulas e funcións</a></li>
+   <li id="active"><a href="uso_de_expresins_lxicas.html" class="active no-ch">Uso de expresións lóxicas</a></li>
+   <li><a href="aniado_de_funcins.html" class="no-ch">Aniñado de funcións</a></li>
+   <li><a href="uso_de_comodns_ou_expresins_regulares.html" class="no-ch">Uso de comodíns ou expresións regulares</a></li>
+   <li><a href="funcins_de_contar_e_sumar.html" class="no-ch">Funcións de contar e sumar</a></li>
+   <li><a href="funcins_de_texto.html" class="no-ch">Funcións de texto</a></li>
+   <li><a href="funcins_de_data_e_hora.html" class="no-ch">Funcións de data e hora</a></li>
+   <li><a href="funcins_lxicas.html" class="no-ch">Funcións lóxicas</a></li>
+   <li><a href="funcins_de_folla_de_clculo.html" class="no-ch">Funcións de folla de cálculo</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="uso_de_nomes_en_frmulas_e_funcins.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="aniado_de_funcins.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Uso de expresións lóxicas</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id85">
+<div class="iDevice emphasis0">
+<div id="ta85_85" class="block iDevice_content">
+<h2>Operadores lóxicos e expresións lóxicas</h2>
+<p>Para introducirnos na lóxica de <strong>Calc,</strong> en primeiro lugar temos que analizar o que son as <strong>expresións lóxicas</strong> e coñecer os <strong>operadores lóxicos</strong>.</p>
+<p>Ata agora, nas nosas fórmulas estivemso usando fundamentalmente os <strong>operadores aritméticos</strong> (<span style="font-family: 'courier new', courier;"><strong>+ - / *</strong></span>).</p>
+<p>Cando creamos unha expresión con operadores aritméticos estamos creando unha <strong>expresión aritmética</strong>.</p>
+<p>Pero tamén dispoñemos doutros operadores, denominados operadores de comparación, ou nun termo máis preciso, <strong>operadores lóxicos</strong>. Xa fixemos uso de operadores lóxicos cando aplicabamos un criterio numérico a unha función <strong>CONTARSE</strong> ou <strong>SUMARSE</strong>.</p>
+<p>Relacionamos a continuación os operadores lóxicos e as súas descricións.</p>
+<ul>
+<li><strong>Maior que</strong>, representase co símbolo<span style="font-family: courier new,courier; font-size: medium;"><strong> &gt; </strong></span> ; <strong>x &gt; y</strong> lese como; x maior que y</li>
+<li><strong>Maior ou igual que</strong>, representase co símbolo<span style="font-family: courier new,courier; font-size: medium;"><strong> &gt;=</strong></span> ; <strong>x &gt;= y</strong> lese como; x mayor ou igual que y</li>
+<li><strong>Menor que</strong>, representase co símbolo<span style="font-family: courier new,courier; font-size: medium;"><strong> &lt;</strong></span> ; <strong>x &lt; y</strong> lese como x menor que y</li>
+<li><strong>Menor ou igual que</strong>, representase co símbolo<span style="font-family: courier new,courier; font-size: medium;"><strong> &lt;=</strong></span> ; <strong>x &lt;= y</strong> lese como x menor ou igual que y</li>
+<li><strong>Igual que</strong>, representase co símbolo<span style="font-family: courier new,courier; font-size: medium;"><strong> =</strong></span> ; <strong>x = y</strong> lese como x igual que y</li>
+<li><strong>Distinto de</strong>, representase co símbolo<span style="font-family: courier new,courier; font-size: medium;"><strong> &lt;&gt;</strong></span> ; <strong>x &lt;&gt; y</strong> lese como x distinto que y</li>
+</ul>
+<p>Cando creamos unha expresión utilizando <strong>operadores lóxicos</strong>, estamos creando unha <strong>expresión lógica</strong>.</p>
+<p>Como característica especial, as expresións lóxicas tan só devolven dous resultados posibles: o valor lóxico <span style="font-family: courier new,courier;"><strong>VERDADEIRO</strong> </span>ou o valor lóxico <span style="font-family: courier new,courier;"><strong>FALSO</strong></span>.</p>
+<p>Reproducimos os seguintes exemplos:</p>
+<ul>
+<li>A fórmula <strong><span style="font-family: courier new,courier;">=5&gt;3</span></strong> dará como resultado <span style="font-family: courier new,courier;"><strong>VERDADEIRO</strong></span></li>
+<li>A fórmula <strong><span style="font-family: courier new,courier;">=5&lt;3</span></strong> dará como resultado <span style="font-family: courier new,courier;"><strong>FALSO</strong></span></li>
+<li>A fórmula <strong><span style="font-family: courier new,courier;">="a"="A"</span></strong> dará como resultado <span style="font-family: courier new,courier;"><strong>VERDADEIRO<br /></strong></span></li>
+<li>A fórmula <strong><span style="font-family: courier new,courier;">=<strong><span style="font-family: courier new,courier;">"a"="á"</span></strong></span></strong> dará como resultado <span style="font-family: courier new,courier;"><strong>FALSO</strong></span></li>
+<li>A fórmula <strong><span style="font-family: courier new,courier;">=<strong><span style="font-family: courier new,courier;">"z"&gt;"a"</span></strong></span></strong> dará como resultado <span style="font-family: courier new,courier;"><strong>VERDADEIRO<br /></strong></span></li>
+<li>A fórmula <strong><span style="font-family: courier new,courier;">=PI()&gt;3,14</span></strong> dará como resultado <span style="font-family: courier new,courier;"><strong>VERDADEIRO</strong></span></li>
+</ul>
+<p>Naturalmente, os exemplos reais poden ser bastante máis complicados que os que se amosan aqui, como <strong>=SUMA(A1:A10)&gt;MEDIA(B1:B5)</strong>.</p>
+<p>Observemos algunhas características que se deducen dos exemplos amosados:</p>
+<ul>
+<li>As expresións lóxicas aplicadas a textos implican un sentido de ordenación: a "Z" é maior que a "A".</li>
+<li>A estos efectos, maiúsculas e minúsculas son equivalentes.</li>
+<li>Caracteres con tilde ou acento, non son equivalentes aos mesmos caracteres sen eles.</li>
+</ul>
+<p>Gracias ás expresións lóxicas, podemos disfrutar de funcións como <strong>SE()</strong> que permiten obter un resultado ou otro en función de que unha expresión lóxica resulte como verdadeira ou falsa.</p>
+<p>Existe unha equivalencia numérica que permite crear operacións aritméticas con expresións lóxicas. A estos efectos, <strong>FALSO</strong> equivale a cero (0) e <strong>VERDADEIRO</strong> a un (1) ou a calquera valor distinto de cero.</p>
+<p>Os valores lóxicos <strong>VERDADEIRO</strong> ou <strong>FALSO</strong> poden introducirse directamente en fórmulas escribindoos tal cual, sen comiñas, ou ben como funcións <strong>VERDADEIRO()</strong> ou <strong>FALSO()</strong>.</p>
+<p>Á hora de xerar expresións lóxicas en Calc o máis habitual é comparar unha cela con:</p>
+<ul>
+<li>Outra cela. Exemplos de fórmulas que compararán unha cela con outra cela: <strong>=<span style="font-family: courier new,courier;">B2</span>=<span style="font-family: courier new,courier;">B5</span></strong>, <strong>=<span style="font-family: courier new,courier;">B2</span>&lt;$<span style="font-family: courier new,courier;">B5</span></strong>, <strong>=<span style="font-family: courier new,courier;">B2</span>&gt;$<span style="font-family: courier new,courier;">B$5</span></strong>, <strong>=$<span style="font-family: courier new,courier;">B2</span>&lt;&gt;<span style="font-family: courier new,courier;">B5</span></strong>.</li>
+<li>Un valor constante numérico. Exemplos de fórmulas que compararán unha cela cun valor constante numérico: <strong>=<span style="font-family: courier new,courier;">B2</span>=<span style="font-family: courier new,courier;">2</span></strong>, <strong>=<span style="font-family: courier new,courier;">B$2</span>&lt;<span style="font-family: courier new,courier;">5</span></strong>, <strong>=<span style="font-family: courier new,courier;">B2</span>&gt;<span style="font-family: courier new,courier;">1452,65</span></strong>, <strong>=<span style="font-family: courier new,courier;">B2</span>&lt;&gt;<span style="font-family: courier new,courier;">-25</span></strong>.</li>
+<li>Un valor constante alfanumérico. Exemplos de fórmulas que compararán unha cela cun valor constante alfanumérico: <strong>=<span style="font-family: courier new,courier;">B2</span>=<span style="font-family: courier new,courier;">"Valencia"</span></strong>, <strong>=$<span style="font-family: courier new,courier;">B2</span>&lt;<span style="font-family: courier new,courier;">"B"</span></strong>, <strong>=<span style="font-family: courier new,courier;">B2</span>&gt;<span style="font-family: courier new,courier;">"Barcelona"</span></strong>, <strong>=<span style="font-family: courier new,courier;">B2</span>&lt;&gt;<span style="font-family: courier new,courier;">"Alicante"</span></strong>.</li>
+<li>Un valor constante tipo data. Exemplos de fórmulas que compararán unha cela cun valor constante de tipo data: <strong>=<span style="font-family: courier new,courier;">B2</span>=<span style="font-family: courier new,courier;">FECHA(2017;12;31)</span></strong>, <strong>=<span style="font-family: courier new,courier;">B2</span>&gt;<span style="font-family: courier new,courier;">"31/12/2017"</span></strong>.</li>
+<li>Un valor constante tipo hora. Exemplos de fórmulas que compararán unha cela cun valor constante de tipo hora: <strong>=<span style="font-family: courier new,courier;">B2</span>=<span style="font-family: courier new,courier;">TIEMPO(18;15;30)</span></strong>, <strong>=<span style="font-family: courier new,courier;">B2</span>&lt;<span style="font-family: courier new,courier;">"18:15:30"</span></strong>.</li>
+</ul>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id86">
+<div class="iDevice emphasis0">
+<div id="ta86_85" class="block iDevice_content">
+<h2>Utilizar expresións lóxicas en funcións</h2>
+<p>Algunhas funcións realizan a súa función filtrando os datos a través de criterios de comparación (expresións lóxicas) nun, ou máis dun, dos seus argumentos.</p>
+<p>Por exemplo, veremos máis adiante que<strong> CONTARSE</strong> é usada habitualmente con expresións lóxicas, e a utilizaremos se queremos contar nunha lista de datos cantos deles son iguais, maiores, maiores ou iguais, menores, menores ou iguais, ou distintos a un valor ou ao contido dunha cela.</p>
+<p>Por isto nun dos argumentos da función deberemos indicar o criterio (expresión lóxica) que debe seguir; a forma correcta de escribir o criterio resúmese nestes catro puntos:</p>
+<ul>
+<li>Se a condición é "igual a" un valor constante, escríbese o valor directamente dentro da fórmula; en caso de que sexa un número, sen comiñas dobres; se é un texto debemos escribilo entre comiñas dobres sempre. Se o valor constante é unha data ou hora, recomendamos utilizar as funcións DATA() e TEMPO(), aínda que tamén se acepta escribir a fecha como un texto coa notación "AAAA-MM-DD", pero non en notación "DD/MM/AAAA". Se é igual a unha cela, inserimos a referencia á cela.</li>
+<li style="margin-left: 60px;"><strong>=CONTARSE(C2:C7;300)</strong>: conta as aparicións no intervalo do valor 300 (igual a 300).</li>
+<li style="margin-left: 60px;"><strong>=CONTARSE(B2:B7;"Valencia")</strong>: conta as aparicións no intervalo do valor "Valencia" (igual a Valencia).</li>
+<li style="margin-left: 60px;"><strong>=CONTARSE(R2:R7;DATA(2017;12;31))</strong>: conta aparicións no intervalo do valor 31/12/2017 (igual a 31/12/2017).</li>
+<li style="margin-left: 60px;"><strong>=CONTARSE(R2:R7;"2017-12-31")</strong>: conta aparicións no intervalo do valor 31/12/2017 (igual a 31/12/2017).</li>
+<li style="margin-left: 60px;"><strong>=CONTARSE(R2:R7;"31/12/2017")</strong>: conta aparicións no intervalo do valor 31/12/2017 (igual a 31/12/2017).</li>
+<li style="margin-left: 60px;"><strong>=CONTARSE(B2:B7;J18)</strong>: conta aparicións no intervalo do valor da cela J18 (igual á cela J18).</li>
+</ul>
+<p style="margin-left: 90px;"><img src="C2-2-formulacion-avanzada-20.png" alt="Criterio igual a un valor" title="Criterio igual a un valor" style="display: block; margin-left: auto; margin-right: auto;" width="579" height="299" /></p>
+<ul>
+<li>Se a condición é &gt;, &gt;=, &lt;, &lt;=, &lt;&gt; que un valor constante, escribirase a condición completa entre comiñas dobres.</li>
+<li style="text-align: left; margin-left: 60px;"><strong>=CONTARSE(C2:C7;"&lt;=300")</strong>: conta aparicións no intervalo de valores menores ou iguais a 300.</li>
+<li style="text-align: left; margin-left: 60px;"><strong>=CONTARSE(B2:B7;"&gt;=Barcelona")</strong>: conta aparicións no intervalo de valores maiores ou iguais a "Barcelona", alfabéticamente, polo que se incluirán Barcelona e Valencia, pero non Alicante.</li>
+</ul>
+<p style="text-align: left; margin-left: 90px;"><img src="C2-2-formulacion-avanzada-21.png" alt="Criterio mayor o igual a un valor" title="Criterio mayor o igual a un valor" style="display: block; margin-left: auto; margin-right: auto;" width="580" height="296" /></p>
+<ul>
+<li>Se a condición inclúe un operador de comparación (é &gt;, &gt;=, &lt;, &lt;=, &lt;&gt; dun valor), e unha referencia a unha función ou a unha cela, escribirase o operador entre comiñas dobres, seguido do operador <strong>&amp;</strong> e o resto da condición, tal e como se indicou no primeiro punto.</li>
+<li style="text-align: left; margin-left: 60px;"><strong>=CONTARSE(C2:C7;"&lt;=" &amp; J16)</strong>: conta aparicións no intervalo de valores menores ou iguais ao valor contido na cela J16.</li>
+<li style="text-align: left; margin-left: 60px;"><strong>=CONTARSE(B2:B7;"&gt;=" &amp; DATA<strong>(2017;12;31)</strong>)</strong>: conta aparicións no intervalo de valores maiores ou iguais a 31/12/2017.</li>
+</ul>
+<p style="text-align: left; margin-left: 90px;"><img src="C2-2-formulacion-avanzada-22.png" alt="Criterio mayor o igual a al valor de una celda" title="Criterio mayor o igual a al valor de una celda" style="display: block; margin-left: auto; margin-right: auto;" width="575" height="325" /></p>
+<ul>
+<li>Se a condición completa se escribe nunha cela, insírese a referencia á cela.</li>
+<li style="text-align: left; margin-left: 60px;"><strong>=CONTARSE(C2:C7;B9)</strong>: onde:</li>
+<li style="text-align: left; margin-left: 90px;">Se <strong><span style="font-family: courier new,courier;">B9</span></strong> contén o texto "&gt;300", conta aparicións no intervalo de valores maiores a 300</li>
+<li style="text-align: left; margin-left: 90px;">Se <strong><span style="font-family: courier new,courier;">B9</span> </strong>contén o texto "&lt;&gt;300", contará aqueles distintos a 300</li>
+<li style="text-align: left; margin-left: 90px;">Se <strong><span style="font-family: courier new,courier;">B9</span> </strong>contén o número 300, contará aqueles iguais a 300.</li>
+</ul>
+<p><img src="C2-2-formulacion-avanzada-23.png" alt="Criterio expresado en una celda" title="Criterio expresado en una celda" style="display: block; margin-left: auto; margin-right: auto;" width="582" height="329" /></p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Licenciado baixo a</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licenza Creative Commons Recoñecemento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="uso_de_nomes_en_frmulas_e_funcins.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="aniado_de_funcins.html" class="next"><span>Seguinte<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

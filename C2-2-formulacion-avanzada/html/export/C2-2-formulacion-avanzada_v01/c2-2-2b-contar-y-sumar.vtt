@@ -1,0 +1,301 @@
+WEBVTT
+
+00:03.340 --> 00:10.480
+Éste es el segundo de los tres vídeos que estamos dedicando a las funciones que nos permiten contar, sumar y promediar datos.
+
+00:11.100 --> 00:16.180
+Ahora que mediante funciones sencillas nos hemos familiarizado con el uso de nombres en las fórmulas...
+
+00:16.840 --> 00:22.920
+... vamos a mostrar el uso de funciones para contar, sumar y promediar celdas que cumplan una determinada condición.
+
+00:23.720 --> 00:32.400
+Como en el vídeo anterior, disponemos de una hoja de ejemplo donde tenemos una lista de productos con nombre, unidades y precio. 
+
+00:33.180 --> 00:36.460
+También tenemos un porcentaje de IVA en la celda F1.
+
+00:36.980 --> 00:43.140
+Todos estos datos están debidamente nombrados como podemos comprobar desplegando el cuadro de nombres.  
+
+00:45.800 --> 00:54.840
+Los nombres "PRODUCTO", "UNIDADES" y "PRECIO" nos facilitarán la creación rápida de fórmulas.
+
+00:55.500 --> 00:57.640
+Ahora, activamos la Hoja2.
+
+01:00.220 --> 01:08.000
+En la Hoja2 hemos establecido dos celdas para introducir las condiciones que aplicaremos en función del nombre de producto o del precio del mismo.
+
+01:08.380 --> 01:16.000
+Estas celdas, la C3 y la D3, han sido sombreadas en color azul pálido.
+
+01:17.120 --> 01:25.740
+Los nombres de las funciones que usaremos están en la columna E, en texto blanco sobre fondo rojo oscuro.
+
+01:26.660 --> 01:31.100
+Las celdas donde escribiremos las fórmulas están sombreadas en amarillo.
+
+01:34.840 --> 01:40.860
+En primer lugar vamos a contar cuántos productos diferentes tenemos cuyo nombre comience por "DX".
+
+01:41.420 --> 01:50.680
+La función que nos permitirá responder a esta pregunta es CONTAR.SI.  Esta función requiere dos argumentos...
+
+01:50.780 --> 01:57.140
+... el intervalo de celdas que se van a contar, y el criterio que deben cumplir estas celdas para ser contadas.
+
+01:57.540 --> 02:08.160
+Nos situamos en la celda C6 y escribimos "=CONTAR.SI(".
+
+02:09.520 --> 02:12.760
+El primer argumento es el rango de celdas donde contar.  
+
+02:13.380 --> 02:24.400
+Como el criterio va a ser el nombre del producto, escribimos "PRODUCTO", que se refiere a las celdas de la Hoja1 con el nombre de producto.
+
+02:25.300 --> 02:34.740
+A continuación escribimos un ";" (punto y coma).  Recordemos que los argumentos de las funciones siempre se separan con un punto y coma.
+
+02:35.420 --> 02:42.640
+El segundo argumento es el criterio que se debe cumplir.  Como queremos saber los productos que comienzan por "DX", 
+
+02:43.220 --> 02:55.460
+haremos uso de un comodín asterisco y escribiremos "DX*".
+
+03:00.120 --> 03:06.240
+El uso de mayúsculas o minúsculas en los argumentos de la mayoría de funciones generalmente no es relevante.
+
+03:08.340 --> 03:13.460
+Al cerrar paréntesis y al pulsar Intro, se nos muestra el resultado de 5.
+
+03:14.460 --> 03:24.940
+Efectivamente, activamos la Hoja1 y en el rango de nombres de producto podemos comprobar que hay cinco de ellos que comienzan por "DX".
+
+03:34.740 --> 03:36.500
+Volvemos a la Hoja2.
+
+03:38.020 --> 03:46.200
+Lo que hemos hecho de escribir literalmente el criterio dentro de la fórmula es una mala práctica.
+
+03:47.040 --> 03:52.360
+Hecho así, si en cualquier momento queremos modificar este criterio deberíamos modificar la fórmula.
+
+03:52.760 --> 03:58.480
+Será mucho más práctico que este criterio esté en una celda diferente, de tal manera que...
+
+03:58.980 --> 04:04.520
+... simplemente modificando el contenido de esta celda, se actualize la fórmula sin necesidad de tocarla para nada.
+
+04:05.560 --> 04:11.960
+En la medida de lo posible, siempre será mas recomendable parametrizar de esta manera todos los argumentos de las fórmulas.
+
+04:12.800 --> 04:16.800
+Con ello conseguiremos fórmulas mucho más potentes, flexibles y robustas.
+
+04:18.300 --> 04:25.980
+Así que vamos a escribir el criterio "DX*" en la celda C3, que ya tenemos preparada para ello.
+
+04:33.280 --> 04:38.520
+Y ahora editamos la fórmula haciendo doble clic en la celda C6.
+
+04:43.000 --> 04:54.560
+En la fórmula, suprimimos el segundo argumento "DX*" y en su lugar hacemos clic en la celda C3.
+
+04:56.100 --> 05:07.860
+Ahora la fórmula determinará el criterio que se debe cumplir para contar según lo que contenga la celda C3.
+
+05:08.700 --> 05:13.020
+Pulsamos Intro y comprobamos que el resultado sigue siendo de 5.
+
+05:14.160 --> 05:16.980
+Vamos a experimentar un poco con otros criterios.
+
+05:19.840 --> 05:26.040
+El asterisco usado como comodín en el criterio quiere decir "cualquier conjunto de caracteres o ninguno".
+
+05:26.600 --> 05:32.040
+Por eso, para saber los productos que comienzan por "DX" hemos escrito "DX*".
+
+05:32.720 --> 05:37.960
+Si queremos saber cuántos acaban por "50", escribimos "*50".
+
+05:40.800 --> 05:44.920
+Ahora la fórmula nos indica que hay tres productos que cumplen este criterio.
+
+05:46.340 --> 05:52.460
+Si el criterio debe ser "que contiene", escribiremos el término entre dos asteriscos.
+
+05:53.300 --> 06:02.960
+Por ejemplo, para saber cuántos productos tienen "386" en su nombre, escribimos "*386*".
+
+06:06.380 --> 06:14.760
+Las opciones de autocorrección nos están jugando una mala pasada, pues interpretan que hemos escrito el texto entre asteriscos porque lo deseamos en negrita.
+
+06:18.380 --> 06:21.300
+Vamos a resolver esto.
+
+06:22.080 --> 06:31.120
+En el menú Herramientas, seleccionamos "Opciones de autocorrección".
+
+06:42.420 --> 06:55.200
+Y en el diálogo de "Corrección automática", activamos la pestaña Opciones y desactivamos la casilla de verificación "Negrita y subrayado automáticos".
+
+06:56.920 --> 07:04.020
+Aceptamos y volvemos a escribir "*386*" en la celda.
+
+07:06.840 --> 07:11.280
+Ahora, la fórmula ya nos indica que hay cinco productos con este criterio.
+
+07:12.260 --> 07:20.660
+Literalmente el criterio significa "cualquier conjunto de caracteres, seguido de '386', seguido de cualquier otro conjunto de caracteres".
+
+07:21.960 --> 07:29.220
+Para saber los productos que comienzan por "SX", escribimos "SX*".
+
+07:32.960 --> 07:43.620
+Hay tres productos que satisfacen la consulta.  Quitamos el formato de negrita de la celda C3 pulsando el botón de la barra de herramientas.
+
+07:47.280 --> 07:56.020
+Para hacer el mismo cálculo en base al precio vamos ya a establecer directamente el criterio en la celda D3.
+
+07:56.520 --> 08:03.360
+Si queremos saber precios superiores a 2500, escribiremos ">2500".
+
+08:05.080 --> 08:25.920
+Vamos a la celda D6 y escribimos la fórmula "=CONTAR.SI(PRECIO;D3)"
+
+08:27.160 --> 08:33.760
+Al cerrar paréntesis y aceptar la fórmula nos informa de que hay dos productos que satisfacen esta condición.
+
+08:37.220 --> 08:45.080
+Vamos ahora a responder otro tipo de pregunta: ¿Cuántas unidades suman los productos que cumplen los criterios establecidos?
+
+08:45.760 --> 08:48.260
+Para ello usaremos la función SUMAR.SI.
+
+08:49.120 --> 08:56.240
+Esta función es muy parecida a CONTAR.SI, pero le añade un argumento adicional, que es el rango de valores que deberá sumar.
+
+08:57.040 --> 09:04.860
+No situamos en la celda C7 y escribimos "=SUMAR.SI(".
+
+09:06.200 --> 09:14.620
+El primer argumento es el intervalo de celdas donde se comprobará el criterio, es decir, los productos...
+
+09:15.740 --> 09:21.080
+... así que escribimos "PRODUCTO", seguido de un punto y coma.
+
+09:22.160 --> 09:30.960
+El segundo argumento es la celda que contiene el criterio, seleccionamos la celda C3 y escribimos un punto y coma seguidamente.
+
+09:33.440 --> 09:46.300
+Finalmente el tercer argumento es el rango de valores que habrá que sumar.  En este caso las unidades, así que escribimos "UNIDADES".
+
+09:47.520 --> 09:50.200
+Ya podemos cerrar el paréntesis y pulsar Intro.
+
+09:51.340 --> 09:56.220
+La fórmula nos dice que hay 41 unidades de los productos que comienzan por "SX".
+
+09:57.220 --> 09:59.260
+Activamos la Hoja1 y vamos a comprobarlo.
+
+10:02.000 --> 10:14.060
+Vemos que los tres productos que comienzan por "SX" tienen respectivamente 13, 13 y 15 unidades,
+
+10:14.980 --> 10:21.780
+que totalizan las 41 unidades que nos devuelve la fórmula.
+
+10:23.460 --> 10:25.340
+Regresamos a la Hoja2.
+
+10:29.260 --> 10:38.260
+De forma análoga resolveremos la fórmula para saber las unidades que totalizan los productos con un precio superior a 2500.
+
+10:39.140 --> 11:00.440
+Seleccionamos la celda D7 y escribimos la fórmula "=SUMAR.SI(PRECIO;D3;UNIDADES)"
+
+11:04.820 --> 11:12.200
+La fórmula ha resuelto que hay 25 unidades de productos con un precio superior a 2500.
+
+11:14.980 --> 11:19.060
+Finalmente, vamos a explorar el uso de la función PROMEDIO.SI.
+
+11:19.740 --> 11:25.980
+Esta función es calcada a SUMAR.SI, con la diferencia de que en vez de sumar, va a obtener el promedio.
+
+11:26.300 --> 11:33.360
+En este caso responderá a la pregunta: ¿Cuál es el precio medio de los productos que cumplen los criterios que hemos establecido?
+
+11:34.260 --> 11:42.200
+Por consiguiente, el tercer argumento, en vez de ser "UNIDADES", será "PRECIO", que el el rango de celdas cuyos valores prendendemos promediar.
+
+11:43.220 --> 11:45.480
+Hacemos clic en la celda C8.
+
+11:46.360 --> 12:15.080
+Escribimos "=PROMEDIO.SI(PRODUCTO;C3;PRECIO)".
+
+12:15.880 --> 12:18.480
+Cerramos paréntesis y hacemos Intro
+
+12:20.060 --> 12:22.820
+Hacemos clicjk en la celda D8
+
+12:25.280 --> 12:39.680
+Escribimos "=PROMEDIO.SI(PRECIO;D3"
+
+12:40.580 --> 12:46.260
+y nos detenemos un momento para comentar que el tercer argumento es opcional y en este caso no lo necesitamos.
+
+12:46.960 --> 12:50.920
+El tercer argumento debería ser PRECIO, que es lo que pretendemos promediar...
+
+12:51.620 --> 12:59.300
+... pero resulta que PRECIO también lo hemos usado como intervalo donde validar el criterio.
+
+12:59.880 --> 13:08.720
+En estos casos, tanto la función SUMAR.SI como la función PROMEDIO.SI permiten obviar el tercer argumento, dado que coincide con el primero.
+
+13:09.360 --> 13:15.640
+Por esto, en este caso, simplemente cerramos el paréntesis y pulsamos Intro para aplicar la fórmula.
+
+13:17.340 --> 13:27.260
+Lo que nos indica el resultado obtenido es que el precio medio de los productos cuyo precio es superior a 2500, asciende a 2980.
+
+13:28.440 --> 13:32.860
+Lo podemos comprobar fácilmente en la Hoja1.  Activamos la Hoja 1.
+
+13:34.480 --> 13:46.300
+Seleccionando los dos precios superiores a 2500, comprobamos en la barra de estado, que su promedio asciende a 2980.
+
+13:48.560 --> 13:50.240
+Regresamos a la Hoja2.
+
+13:52.220 --> 14:00.740
+Las funciones que hemos tratado, CONTAR.SI, SUMAR.SI y PROMEDIO.SI son muy útiles.
+
+14:01.800 --> 14:09.120
+¿Quién no tiene una lista de datos con una columna de observaciones donde en algunos casos pone "PENDIENTE", "LLAMAR" o algo por el estilo?
+
+14:09.740 --> 14:18.120
+Estas funciones nos pueden permitir muy fácilmente contar, sumar y promediar los valores correspondientes a esas observaciones.
+
+14:18.720 --> 14:23.080
+Pero estas funciones tienen una limitación.  Y es que tan sólo admiten un criterio.  
+
+14:23.780 --> 14:32.400
+Siguiendo con este mismo ejemplo, no puedo saber cuantos productos de la serie "SX" tienen al mismo tiempo un precio superior a 2500.
+
+14:33.320 --> 14:39.500
+En el siguiente vídeo veremos otras funciones que nos permitirán resolverlo.
+
+14:40.700 --> 14:44.580
+No dudamos de que las funciones que hemos explorado en este vídeo os resultarán muy útiles
+
+14:44.580 --> 14:49.740
+y os facilitarán la creación de fórmulas que cuentan y suman vuestros datos.
+
+14:50.180 --> 14:51.740
+Muchas gracias por vuestra atención.
